@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SFMLExample.dir/Game.cpp.o"
+  "CMakeFiles/SFMLExample.dir/Game.cpp.o.d"
   "CMakeFiles/SFMLExample.dir/main.cpp.o"
   "CMakeFiles/SFMLExample.dir/main.cpp.o.d"
   "SFMLExample"

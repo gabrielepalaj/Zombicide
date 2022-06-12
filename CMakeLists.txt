@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(EXECUTABLE_NAME SFMLExample)
 
-add_executable(${EXECUTABLE_NAME} main.cpp)
+add_executable(${EXECUTABLE_NAME} main.cpp Game.cpp Game.h)
 
 
 # Detect and add SFML - to read FindSFML.cmake file

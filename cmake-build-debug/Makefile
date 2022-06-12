@@ -129,6 +129,30 @@ SFMLExample/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/build
 .PHONY : SFMLExample/fast
 
+Game.o: Game.cpp.o
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SFMLExample"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
