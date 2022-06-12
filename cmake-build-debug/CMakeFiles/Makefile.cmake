@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+  "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+  "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindCodeBlocks.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
@@ -29,6 +31,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "/snap/clion/193/bin/cmake/linux/share/cmake-3.22/Modules/ProcessorCount.cmake"
   )
 
 # The corresponding makefile is:
@@ -44,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SFMLExample.dir/DependInfo.cmake"
+  "CMakeFiles/Zombicide.dir/DependInfo.cmake"
   )

@@ -7,6 +7,7 @@
 //private methods
 void Game::initVariables() {
     this->app = nullptr;
+
 }
 
 void Game::initWindow() {
@@ -17,10 +18,23 @@ void Game::initWindow() {
 
 }
 
+void Game::initEnemies(){
+    //posizione in base all'angolo alto-sx
+
+    this->enemy.setSize(sf::Vector2f(50.f, 50.f));
+    this->enemy.setPosition(100, 100);
+    this->enemy.setFillColor(sf::Color::Red);
+    this->enemy.setOutlineColor(sf::Color::Blue);
+    this->enemy.setOutlineThickness(2.f);
+
+}
+
 //Constructors / destructors
 Game::Game() {
     this->initVariables();
     this->initWindow();
+    this->initEnemies();
+
 }
 
 Game::~Game() {
@@ -29,11 +43,11 @@ Game::~Game() {
 
 //Accessors
 
-const bool Game::isRunning() const{
+bool Game::isRunning() const{
     return this->app->isOpen();
 }
 
-//Methods.
+//Methods
 
 void Game::pollEvents() {
     while (this->app->pollEvent(this->event)) {
@@ -57,6 +71,14 @@ void Game::pollEvents() {
 void Game::update() {
     this->pollEvents();
 
+    //update mouse position relative to the window
+    //std::cout<<"Mouse position: " + sf::Mouse::getPosition(*this->app).x<<","<<sf::Mouse::getPosition(*this->app).y<<std::endl;
+    //update mouse position relative to the screen
+    //std::cout<<"Mouse position: " + sf::Mouse::getPosition().x<<","<<sf::Mouse::getPosition().y<<std::endl;
+
+    //update enemy position relative to the mouse position
+    //this->enemy.setPosition(sf::Mouse::getPosition(*this->app).x-(enemy.getSize().x/2), sf::Mouse::getPosition(*this->app).y -(enemy.getSize().y/2));
+
 }
 
 void Game::render() {
@@ -72,10 +94,19 @@ void Game::render() {
     this->app->clear();
 
     //Draw game here
+    this->app->draw(this->enemy);
 
 
     this->app->display();
 }
+
+void Game::run() {
+    while (this->isRunning()) {
+        this->update();
+        this->render();
+    }
+}
+
 
 
 

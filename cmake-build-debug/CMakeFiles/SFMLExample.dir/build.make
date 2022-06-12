@@ -53,10 +53,10 @@ RM = /snap/clion/193/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documenti/Programmazione/Progettone/Progetto
+CMAKE_SOURCE_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SFMLExample.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/SFMLExample.dir/flags.make
 CMakeFiles/SFMLExample.dir/main.cpp.o: CMakeFiles/SFMLExample.dir/flags.make
 CMakeFiles/SFMLExample.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SFMLExample.dir/main.cpp.o: CMakeFiles/SFMLExample.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SFMLExample.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLExample.dir/main.cpp.o -MF CMakeFiles/SFMLExample.dir/main.cpp.o.d -o CMakeFiles/SFMLExample.dir/main.cpp.o -c /home/gabriele/Documenti/Programmazione/Progettone/Progetto/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SFMLExample.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLExample.dir/main.cpp.o -MF CMakeFiles/SFMLExample.dir/main.cpp.o.d -o CMakeFiles/SFMLExample.dir/main.cpp.o -c /home/gabriele/Documents/Programmazione/Progettone/Zombicide/main.cpp
 
 CMakeFiles/SFMLExample.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLExample.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/Documenti/Programmazione/Progettone/Progetto/main.cpp > CMakeFiles/SFMLExample.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/Documents/Programmazione/Progettone/Zombicide/main.cpp > CMakeFiles/SFMLExample.dir/main.cpp.i
 
 CMakeFiles/SFMLExample.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLExample.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/Documenti/Programmazione/Progettone/Progetto/main.cpp -o CMakeFiles/SFMLExample.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/Documents/Programmazione/Progettone/Zombicide/main.cpp -o CMakeFiles/SFMLExample.dir/main.cpp.s
 
 CMakeFiles/SFMLExample.dir/Game.cpp.o: CMakeFiles/SFMLExample.dir/flags.make
 CMakeFiles/SFMLExample.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/SFMLExample.dir/Game.cpp.o: CMakeFiles/SFMLExample.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SFMLExample.dir/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLExample.dir/Game.cpp.o -MF CMakeFiles/SFMLExample.dir/Game.cpp.o.d -o CMakeFiles/SFMLExample.dir/Game.cpp.o -c /home/gabriele/Documenti/Programmazione/Progettone/Progetto/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SFMLExample.dir/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFMLExample.dir/Game.cpp.o -MF CMakeFiles/SFMLExample.dir/Game.cpp.o.d -o CMakeFiles/SFMLExample.dir/Game.cpp.o -c /home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.cpp
 
 CMakeFiles/SFMLExample.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLExample.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/Documenti/Programmazione/Progettone/Progetto/Game.cpp > CMakeFiles/SFMLExample.dir/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.cpp > CMakeFiles/SFMLExample.dir/Game.cpp.i
 
 CMakeFiles/SFMLExample.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLExample.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/Documenti/Programmazione/Progettone/Progetto/Game.cpp -o CMakeFiles/SFMLExample.dir/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.cpp -o CMakeFiles/SFMLExample.dir/Game.cpp.s
 
 # Object files for target SFMLExample
 SFMLExample_OBJECTS = \
@@ -114,7 +114,7 @@ SFMLExample: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 SFMLExample: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 SFMLExample: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 SFMLExample: CMakeFiles/SFMLExample.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SFMLExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SFMLExample"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SFMLExample.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +126,6 @@ CMakeFiles/SFMLExample.dir/clean:
 .PHONY : CMakeFiles/SFMLExample.dir/clean
 
 CMakeFiles/SFMLExample.dir/depend:
-	cd /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriele/Documenti/Programmazione/Progettone/Progetto /home/gabriele/Documenti/Programmazione/Progettone/Progetto /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles/SFMLExample.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriele/Documents/Programmazione/Progettone/Zombicide /home/gabriele/Documents/Programmazione/Progettone/Zombicide /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles/SFMLExample.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SFMLExample.dir/depend
 

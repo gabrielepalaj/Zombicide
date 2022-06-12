@@ -6,9 +6,10 @@
 #include <SFML/System.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
+#include <iostream>
 
-#ifndef SFMLEXAMPLE_GAME_H
-#define SFMLEXAMPLE_GAME_H
+#ifndef ZOMBICIDE_GAME_H
+#define ZOMBICIDE_GAME_H
 
 /*
  * Class that act as game engine.
@@ -22,10 +23,13 @@ private:
     sf::VideoMode videoMode;
     sf::Event event;
 
+    //Enemies
+    sf::RectangleShape enemy;
 
     //private methods
     void initVariables();
     void initWindow();
+    void initEnemies();
 
 public:
     //Costructors / destructors
@@ -33,13 +37,13 @@ public:
     ~Game();
 
     //Accessors
-    const bool isRunning() const;
+    bool isRunning() const;
     //Methods
     void pollEvents();
+    void run();
     void update();
     void render();
-
 };
 
 
-#endif //SFMLEXAMPLE_GAME_H
+#endif //ZOMBICIDE_GAME_H

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/gabriele/Documenti/Programmazione/Progettone/Progetto/Game.cpp" "CMakeFiles/SFMLExample.dir/Game.cpp.o" "gcc" "CMakeFiles/SFMLExample.dir/Game.cpp.o.d"
-  "/home/gabriele/Documenti/Programmazione/Progettone/Progetto/main.cpp" "CMakeFiles/SFMLExample.dir/main.cpp.o" "gcc" "CMakeFiles/SFMLExample.dir/main.cpp.o.d"
+  "/home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.cpp" "CMakeFiles/SFMLExample.dir/Game.cpp.o" "gcc" "CMakeFiles/SFMLExample.dir/Game.cpp.o.d"
+  "/home/gabriele/Documents/Programmazione/Progettone/Zombicide/main.cpp" "CMakeFiles/SFMLExample.dir/main.cpp.o" "gcc" "CMakeFiles/SFMLExample.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

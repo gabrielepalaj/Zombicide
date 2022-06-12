@@ -57,18 +57,18 @@ RM = /snap/clion/193/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documenti/Programmazione/Progettone/Progetto
+CMAKE_SOURCE_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/snap/clion/193/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/193/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SFMLExample
+# Target rules for targets named Zombicide
 
 # Build rule for target.
-SFMLExample: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SFMLExample
-.PHONY : SFMLExample
+Zombicide: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Zombicide
+.PHONY : Zombicide
 
 # fast build rule for target.
-SFMLExample/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/build
-.PHONY : SFMLExample/fast
+Zombicide/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/build
+.PHONY : Zombicide/fast
 
 Game.o: Game.cpp.o
 .PHONY : Game.o
 
 # target to build an object file
 Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Game.cpp.o
 .PHONY : Game.cpp.o
 
 Game.i: Game.cpp.i
@@ -142,7 +142,7 @@ Game.i: Game.cpp.i
 
 # target to preprocess a source file
 Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Game.cpp.i
 .PHONY : Game.cpp.i
 
 Game.s: Game.cpp.s
@@ -150,7 +150,7 @@ Game.s: Game.cpp.s
 
 # target to generate assembly for a file
 Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
 main.o: main.cpp.o
@@ -158,7 +158,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SFMLExample"
+	@echo "... Zombicide"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"

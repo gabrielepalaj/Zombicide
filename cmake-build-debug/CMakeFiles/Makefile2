@@ -54,16 +54,16 @@ RM = /snap/clion/193/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documenti/Programmazione/Progettone/Progetto
+CMAKE_SOURCE_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SFMLExample.dir/all
+all: CMakeFiles/Zombicide.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SFMLExample.dir/clean
+clean: CMakeFiles/Zombicide.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SFMLExample.dir
+# Target rules for target CMakeFiles/Zombicide.dir
 
 # All Build rule for target.
-CMakeFiles/SFMLExample.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target SFMLExample"
-.PHONY : CMakeFiles/SFMLExample.dir/all
+CMakeFiles/Zombicide.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Zombicide"
+.PHONY : CMakeFiles/Zombicide.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SFMLExample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SFMLExample.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/SFMLExample.dir/rule
+CMakeFiles/Zombicide.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Zombicide.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Zombicide.dir/rule
 
 # Convenience name for target.
-SFMLExample: CMakeFiles/SFMLExample.dir/rule
-.PHONY : SFMLExample
+Zombicide: CMakeFiles/Zombicide.dir/rule
+.PHONY : Zombicide
 
 # clean rule for target.
-CMakeFiles/SFMLExample.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFMLExample.dir/build.make CMakeFiles/SFMLExample.dir/clean
-.PHONY : CMakeFiles/SFMLExample.dir/clean
+CMakeFiles/Zombicide.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/clean
+.PHONY : CMakeFiles/Zombicide.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

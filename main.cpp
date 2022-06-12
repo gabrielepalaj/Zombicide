@@ -9,14 +9,5 @@ int main(int argc, char* argv[]) {
     Game game;
 
 
-    while (game.isRunning()) {
-
-
-        //update
-        game.update();
-
-        //render
-        game.render();
-
-    }
+    game.run();
 }

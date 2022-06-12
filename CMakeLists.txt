@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
-project(SFMLExample)
+project(Zombicide)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(EXECUTABLE_NAME SFMLExample)
+set(EXECUTABLE_NAME Zombicide)
 
 add_executable(${EXECUTABLE_NAME} main.cpp Game.cpp Game.h)
 

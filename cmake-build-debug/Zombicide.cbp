@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="SFMLExample"/>
+		<Option title="Zombicide"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
@@ -17,8 +17,8 @@
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SFMLExample">
-				<Option output="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/SFMLExample" prefix_auto="0" extension_auto="0"/>
+			<Target title="Zombicide">
+				<Option output="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Zombicide" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -33,14 +33,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFMLExample"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zombicide"/>
 					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SFMLExample/fast">
-				<Option output="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/SFMLExample" prefix_auto="0" extension_auto="0"/>
+			<Target title="Zombicide/fast">
+				<Option output="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Zombicide" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -55,7 +55,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 SFMLExample/fast"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zombicide/fast"/>
 					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -83,13 +83,13 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.cpp">
-			<Option target="SFMLExample"/>
+			<Option target="Zombicide"/>
 		</Unit>
 		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.h">
-			<Option target="SFMLExample"/>
+			<Option target="Zombicide"/>
 		</Unit>
 		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/main.cpp">
-			<Option target="SFMLExample"/>
+			<Option target="Zombicide"/>
 		</Unit>
 		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
