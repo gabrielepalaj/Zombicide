@@ -1,0 +1,3 @@
+/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles/SFMLExample.dir
+/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gabriele/Documenti/Programmazione/Progettone/Progetto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
