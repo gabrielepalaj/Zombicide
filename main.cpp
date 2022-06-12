@@ -12,6 +12,6 @@ int main(int argc, char* argv[]) {
             if (Event.type == sf::Event::Closed)
                 App.close();
         }
-        App.display();
+        App.display(); // This is the only difference from the original code.
     }
 }
