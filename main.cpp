@@ -1,26 +1,22 @@
-#include <SFML/Graphics.hpp>
-using namespace std;
+#include "Game.h"
+#include <iostream>
+
+
 
 int main(int argc, char* argv[]) {
 
-    // Code adapted from the SFML 2 "Window" example.
-    sf::RenderWindow App(sf::VideoMode(800, 600), "Zombicide", sf::Style::Titlebar | sf::Style::Close);
+    //Init game engine
+    Game game;
 
-    while (App.isOpen()) {
-        sf::Event Event;
-        while (App.pollEvent(Event)) {
-            if (Event.type == sf::Event::Closed)
-                App.close();
 
-        }
+    while (game.isRunning()) {
+
 
         //update
+        game.update();
 
         //render
-        App.clear();
+        game.render();
 
-        //draw
-
-        App.display();
     }
 }
