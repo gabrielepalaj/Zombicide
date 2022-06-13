@@ -72,9 +72,9 @@ void Game::update() {
     this->pollEvents();
 
     //update mouse position relative to the window
-    //std::cout<<"Mouse position: " + sf::Mouse::getPosition(*this->app).x<<","<<sf::Mouse::getPosition(*this->app).y<<std::endl;
+    //std::cout<<"Mouse position: " + std::to_string(sf::Mouse::getPosition(*this->app).x) + " " + std::to_string(sf::Mouse::getPosition(*this->app).y)<<std::endl;
     //update mouse position relative to the screen
-    //std::cout<<"Mouse position: " + sf::Mouse::getPosition().x<<","<<sf::Mouse::getPosition().y<<std::endl;
+    //std::cout<<"Mouse position: " + std::to_string(sf::Mouse::getPosition().x) + " " + std::to_string(sf::Mouse::getPosition().y)<<std::endl;
 
     //update enemy position relative to the mouse position
     //this->enemy.setPosition(sf::Mouse::getPosition(*this->app).x-(enemy.getSize().x/2), sf::Mouse::getPosition(*this->app).y -(enemy.getSize().y/2));
