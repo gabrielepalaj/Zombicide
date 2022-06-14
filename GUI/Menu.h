@@ -20,6 +20,13 @@ private:
     sf::VideoMode videoMode;
     sf::Event event;
 
+    
+    //Buttons
+    sf::Sprite play;
+    sf::Sprite options;
+    sf::Sprite exit;
+    
+
 
     //private methods
     void initVariables();

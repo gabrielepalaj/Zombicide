@@ -72,6 +72,7 @@ void Menu::update() {
     //update enemy position relative to the mouse position
     //this->enemy.setPosition(sf::Mouse::getPosition(*this->app).x-(enemy.getSize().x/2), sf::Mouse::getPosition(*this->app).y -(enemy.getSize().y/2));
 
+
 }
 
 void Menu::render() {
@@ -87,7 +88,7 @@ void Menu::render() {
     this->app->clear();
 
     //Draw Menu here
-    //set view from folder resources/menu.png
+    //Prova di scrittura menù, DA CAMBIARE
     sf::Texture texture;
     texture.loadFromFile("../Resources/Images/Menu.png");
     sf::Sprite sprite(texture);
