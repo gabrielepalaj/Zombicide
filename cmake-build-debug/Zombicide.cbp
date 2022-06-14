@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.cpp">
+		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/GUI/Game.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/Game.h">
+		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/GUI/Game.h">
+			<Option target="Zombicide"/>
+		</Unit>
+		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/GUI/Menu.cpp">
+			<Option target="Zombicide"/>
+		</Unit>
+		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/GUI/Menu.h">
 			<Option target="Zombicide"/>
 		</Unit>
 		<Unit filename="/home/gabriele/Documents/Programmazione/Progettone/Zombicide/main.cpp">

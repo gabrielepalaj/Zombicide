@@ -11,10 +11,16 @@ void Game::initVariables() {
 }
 
 void Game::initWindow() {
-    this->videoMode.height = 600;
-    this->videoMode.width = 800;
+    //init height and width 1/3 of the screen
+    this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.45);
+    this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.45);
+    //this->videoMode.height = 600;
+    //this->videoMode.width = 800;
 
     this->app = new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Titlebar | sf::Style::Close);
+    this->app->setFramerateLimit(60);
+    
+    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2, sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
 
 }
 

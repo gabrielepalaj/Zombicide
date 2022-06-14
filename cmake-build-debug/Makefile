@@ -129,29 +129,53 @@ Zombicide/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/build
 .PHONY : Zombicide/fast
 
-Game.o: Game.cpp.o
-.PHONY : Game.o
+GUI/Game.o: GUI/Game.cpp.o
+.PHONY : GUI/Game.o
 
 # target to build an object file
-Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Game.cpp.o
-.PHONY : Game.cpp.o
+GUI/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/GUI/Game.cpp.o
+.PHONY : GUI/Game.cpp.o
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+GUI/Game.i: GUI/Game.cpp.i
+.PHONY : GUI/Game.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+GUI/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/GUI/Game.cpp.i
+.PHONY : GUI/Game.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+GUI/Game.s: GUI/Game.cpp.s
+.PHONY : GUI/Game.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+GUI/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/GUI/Game.cpp.s
+.PHONY : GUI/Game.cpp.s
+
+GUI/Menu.o: GUI/Menu.cpp.o
+.PHONY : GUI/Menu.o
+
+# target to build an object file
+GUI/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/GUI/Menu.cpp.o
+.PHONY : GUI/Menu.cpp.o
+
+GUI/Menu.i: GUI/Menu.cpp.i
+.PHONY : GUI/Menu.i
+
+# target to preprocess a source file
+GUI/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/GUI/Menu.cpp.i
+.PHONY : GUI/Menu.cpp.i
+
+GUI/Menu.s: GUI/Menu.cpp.s
+.PHONY : GUI/Menu.s
+
+# target to generate assembly for a file
+GUI/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/GUI/Menu.cpp.s
+.PHONY : GUI/Menu.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Zombicide"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
+	@echo "... GUI/Game.o"
+	@echo "... GUI/Game.i"
+	@echo "... GUI/Game.s"
+	@echo "... GUI/Menu.o"
+	@echo "... GUI/Menu.i"
+	@echo "... GUI/Menu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

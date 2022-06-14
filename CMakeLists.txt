@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(EXECUTABLE_NAME Zombicide)
 
-add_executable(${EXECUTABLE_NAME} main.cpp Game.cpp Game.h)
+add_executable(${EXECUTABLE_NAME} main.cpp GUI/Game.cpp GUI/Game.h GUI/Menu.cpp)
 
 
 # Detect and add SFML - to read FindSFML.cmake file
