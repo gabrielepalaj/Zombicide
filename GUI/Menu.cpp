@@ -7,6 +7,37 @@
 //private methods
 void Menu::initVariables() {
     this->app = nullptr;
+    /*
+    //Prova di scrittura menù, DA CAMBIARE
+    sf::Texture texture;
+    texture.loadFromFile("../Resources/Images/Menu.png");
+    sf::Sprite sprite(texture);
+    sprite.setPosition(0, 0);
+    sprite.setScale(1.0f, 1.0f);
+    this->app->setView(sf::View(sf::FloatRect(0, 0, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height)));
+
+
+    //draw button Gioca (play) with image ../Resources/Images/Gioca.png
+    sf::Texture texturePlay;
+    texturePlay.loadFromFile("../Resources/Images/Gioca.png");
+    play.setTexture(texturePlay);
+    play.setPosition(this->app->getSize().x / 2 - play.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - play.getGlobalBounds().height / 2) + 50);
+    play.setScale(1.0f, 1.0f);
+
+    //draw button Opzioni (options) with image ../Resources/Images/Opzioni.png
+    sf::Texture textureOptions;
+    textureOptions.loadFromFile("../Resources/Images/Opzioni.png");
+    options.setTexture(textureOptions);
+    options.setPosition(this->app->getSize().x / 2 - options.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - options.getGlobalBounds().height / 2) + 100);
+    options.setScale(1.0f, 1.0f);
+
+    //draw button Esci (exit) with image ../Resources/Images/Esci.png
+    sf::Texture textureExit;
+    textureExit.loadFromFile("../Resources/Images/Esci.png");
+    exit.setTexture(textureExit);
+    exit.setPosition(this->app->getSize().x / 2 - exit.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - exit.getGlobalBounds().height / 2) + 150);
+    exit.setScale(1.0f, 1.0f);
+     */
 
 }
 
@@ -72,6 +103,15 @@ void Menu::update() {
     //update enemy position relative to the mouse position
     //this->enemy.setPosition(sf::Mouse::getPosition(*this->app).x-(enemy.getSize().x/2), sf::Mouse::getPosition(*this->app).y -(enemy.getSize().y/2));
 
+    /*
+    //when mouse over Gioca button -> make it bigger
+    if (sf::Mouse::getPosition(*this->app).x > this->play.getPosition().x && sf::Mouse::getPosition(*this->app).x < this->play.getPosition().x + this->play.getGlobalBounds().width &&
+        sf::Mouse::getPosition(*this->app).y > this->play.getPosition().y && sf::Mouse::getPosition(*this->app).y < this->play.getPosition().y + this->play.getGlobalBounds().height) {
+        this->play.setScale(1.2, 1.2);
+    } else {
+        this->play.setScale(1, 1);
+    }
+    */
 
 }
 
@@ -88,22 +128,13 @@ void Menu::render() {
     this->app->clear();
 
     //Draw Menu here
-    //Prova di scrittura menù, DA CAMBIARE
-    sf::Texture texture;
-    texture.loadFromFile("../Resources/Images/Menu.png");
-    sf::Sprite sprite(texture);
-    sprite.setPosition(0, 0);
-    sprite.setScale(1.0f, 1.0f);
-    this->app->setView(sf::View(sf::FloatRect(0, 0, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height)));
-    this->app->draw(sprite);
 
-    //draw button Gioca (play) with image ../Resources/Images/Gioca.png
-    sf::Texture texturePlay;
-    texturePlay.loadFromFile("../Resources/Images/Gioca.png");
-    sf::Sprite spritePlay(texturePlay);
-    spritePlay.setPosition(this->app->getSize().x / 2 - spritePlay.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - spritePlay.getGlobalBounds().height / 2) + 50);
-    spritePlay.setScale(1.0f, 1.0f);
-    this->app->draw(spritePlay);
+    this->app->draw(this->play);
+    this->app->draw(this->options);
+    this->app->draw(this->exit);
+
+
+
 
 
 
@@ -111,7 +142,6 @@ void Menu::render() {
 }
 
 void Menu::run() {
-
 
 
     while (this->isRunning()) {

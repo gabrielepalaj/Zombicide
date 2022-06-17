@@ -57,10 +57,10 @@ RM = /snap/clion/193/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide
+CMAKE_SOURCE_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,294 @@ Zombicide: cmake_check_build_system
 Zombicide/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/build
 .PHONY : Zombicide/fast
+
+Classes/Card.o: Classes/Card.cpp.o
+.PHONY : Classes/Card.o
+
+# target to build an object file
+Classes/Card.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Card.cpp.o
+.PHONY : Classes/Card.cpp.o
+
+Classes/Card.i: Classes/Card.cpp.i
+.PHONY : Classes/Card.i
+
+# target to preprocess a source file
+Classes/Card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Card.cpp.i
+.PHONY : Classes/Card.cpp.i
+
+Classes/Card.s: Classes/Card.cpp.s
+.PHONY : Classes/Card.s
+
+# target to generate assembly for a file
+Classes/Card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Card.cpp.s
+.PHONY : Classes/Card.cpp.s
+
+Classes/Character.o: Classes/Character.cpp.o
+.PHONY : Classes/Character.o
+
+# target to build an object file
+Classes/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Character.cpp.o
+.PHONY : Classes/Character.cpp.o
+
+Classes/Character.i: Classes/Character.cpp.i
+.PHONY : Classes/Character.i
+
+# target to preprocess a source file
+Classes/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Character.cpp.i
+.PHONY : Classes/Character.cpp.i
+
+Classes/Character.s: Classes/Character.cpp.s
+.PHONY : Classes/Character.s
+
+# target to generate assembly for a file
+Classes/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Character.cpp.s
+.PHONY : Classes/Character.cpp.s
+
+Classes/Deck.o: Classes/Deck.cpp.o
+.PHONY : Classes/Deck.o
+
+# target to build an object file
+Classes/Deck.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Deck.cpp.o
+.PHONY : Classes/Deck.cpp.o
+
+Classes/Deck.i: Classes/Deck.cpp.i
+.PHONY : Classes/Deck.i
+
+# target to preprocess a source file
+Classes/Deck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Deck.cpp.i
+.PHONY : Classes/Deck.cpp.i
+
+Classes/Deck.s: Classes/Deck.cpp.s
+.PHONY : Classes/Deck.s
+
+# target to generate assembly for a file
+Classes/Deck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Deck.cpp.s
+.PHONY : Classes/Deck.cpp.s
+
+Classes/Inventory.o: Classes/Inventory.cpp.o
+.PHONY : Classes/Inventory.o
+
+# target to build an object file
+Classes/Inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Inventory.cpp.o
+.PHONY : Classes/Inventory.cpp.o
+
+Classes/Inventory.i: Classes/Inventory.cpp.i
+.PHONY : Classes/Inventory.i
+
+# target to preprocess a source file
+Classes/Inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Inventory.cpp.i
+.PHONY : Classes/Inventory.cpp.i
+
+Classes/Inventory.s: Classes/Inventory.cpp.s
+.PHONY : Classes/Inventory.s
+
+# target to generate assembly for a file
+Classes/Inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Inventory.cpp.s
+.PHONY : Classes/Inventory.cpp.s
+
+Classes/Map.o: Classes/Map.cpp.o
+.PHONY : Classes/Map.o
+
+# target to build an object file
+Classes/Map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Map.cpp.o
+.PHONY : Classes/Map.cpp.o
+
+Classes/Map.i: Classes/Map.cpp.i
+.PHONY : Classes/Map.i
+
+# target to preprocess a source file
+Classes/Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Map.cpp.i
+.PHONY : Classes/Map.cpp.i
+
+Classes/Map.s: Classes/Map.cpp.s
+.PHONY : Classes/Map.s
+
+# target to generate assembly for a file
+Classes/Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Map.cpp.s
+.PHONY : Classes/Map.cpp.s
+
+Classes/Melee.o: Classes/Melee.cpp.o
+.PHONY : Classes/Melee.o
+
+# target to build an object file
+Classes/Melee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Melee.cpp.o
+.PHONY : Classes/Melee.cpp.o
+
+Classes/Melee.i: Classes/Melee.cpp.i
+.PHONY : Classes/Melee.i
+
+# target to preprocess a source file
+Classes/Melee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Melee.cpp.i
+.PHONY : Classes/Melee.cpp.i
+
+Classes/Melee.s: Classes/Melee.cpp.s
+.PHONY : Classes/Melee.s
+
+# target to generate assembly for a file
+Classes/Melee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Melee.cpp.s
+.PHONY : Classes/Melee.cpp.s
+
+Classes/Ranged.o: Classes/Ranged.cpp.o
+.PHONY : Classes/Ranged.o
+
+# target to build an object file
+Classes/Ranged.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.o
+.PHONY : Classes/Ranged.cpp.o
+
+Classes/Ranged.i: Classes/Ranged.cpp.i
+.PHONY : Classes/Ranged.i
+
+# target to preprocess a source file
+Classes/Ranged.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.i
+.PHONY : Classes/Ranged.cpp.i
+
+Classes/Ranged.s: Classes/Ranged.cpp.s
+.PHONY : Classes/Ranged.s
+
+# target to generate assembly for a file
+Classes/Ranged.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.s
+.PHONY : Classes/Ranged.cpp.s
+
+Classes/Space.o: Classes/Space.cpp.o
+.PHONY : Classes/Space.o
+
+# target to build an object file
+Classes/Space.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Space.cpp.o
+.PHONY : Classes/Space.cpp.o
+
+Classes/Space.i: Classes/Space.cpp.i
+.PHONY : Classes/Space.i
+
+# target to preprocess a source file
+Classes/Space.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Space.cpp.i
+.PHONY : Classes/Space.cpp.i
+
+Classes/Space.s: Classes/Space.cpp.s
+.PHONY : Classes/Space.s
+
+# target to generate assembly for a file
+Classes/Space.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Space.cpp.s
+.PHONY : Classes/Space.cpp.s
+
+Classes/SpawnZombie.o: Classes/SpawnZombie.cpp.o
+.PHONY : Classes/SpawnZombie.o
+
+# target to build an object file
+Classes/SpawnZombie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/SpawnZombie.cpp.o
+.PHONY : Classes/SpawnZombie.cpp.o
+
+Classes/SpawnZombie.i: Classes/SpawnZombie.cpp.i
+.PHONY : Classes/SpawnZombie.i
+
+# target to preprocess a source file
+Classes/SpawnZombie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/SpawnZombie.cpp.i
+.PHONY : Classes/SpawnZombie.cpp.i
+
+Classes/SpawnZombie.s: Classes/SpawnZombie.cpp.s
+.PHONY : Classes/SpawnZombie.s
+
+# target to generate assembly for a file
+Classes/SpawnZombie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/SpawnZombie.cpp.s
+.PHONY : Classes/SpawnZombie.cpp.s
+
+Classes/Survivor.o: Classes/Survivor.cpp.o
+.PHONY : Classes/Survivor.o
+
+# target to build an object file
+Classes/Survivor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Survivor.cpp.o
+.PHONY : Classes/Survivor.cpp.o
+
+Classes/Survivor.i: Classes/Survivor.cpp.i
+.PHONY : Classes/Survivor.i
+
+# target to preprocess a source file
+Classes/Survivor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Survivor.cpp.i
+.PHONY : Classes/Survivor.cpp.i
+
+Classes/Survivor.s: Classes/Survivor.cpp.s
+.PHONY : Classes/Survivor.s
+
+# target to generate assembly for a file
+Classes/Survivor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Survivor.cpp.s
+.PHONY : Classes/Survivor.cpp.s
+
+Classes/Weapon.o: Classes/Weapon.cpp.o
+.PHONY : Classes/Weapon.o
+
+# target to build an object file
+Classes/Weapon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Weapon.cpp.o
+.PHONY : Classes/Weapon.cpp.o
+
+Classes/Weapon.i: Classes/Weapon.cpp.i
+.PHONY : Classes/Weapon.i
+
+# target to preprocess a source file
+Classes/Weapon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Weapon.cpp.i
+.PHONY : Classes/Weapon.cpp.i
+
+Classes/Weapon.s: Classes/Weapon.cpp.s
+.PHONY : Classes/Weapon.s
+
+# target to generate assembly for a file
+Classes/Weapon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Weapon.cpp.s
+.PHONY : Classes/Weapon.cpp.s
+
+Classes/Zombie.o: Classes/Zombie.cpp.o
+.PHONY : Classes/Zombie.o
+
+# target to build an object file
+Classes/Zombie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Zombie.cpp.o
+.PHONY : Classes/Zombie.cpp.o
+
+Classes/Zombie.i: Classes/Zombie.cpp.i
+.PHONY : Classes/Zombie.i
+
+# target to preprocess a source file
+Classes/Zombie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Zombie.cpp.i
+.PHONY : Classes/Zombie.cpp.i
+
+Classes/Zombie.s: Classes/Zombie.cpp.s
+.PHONY : Classes/Zombie.s
+
+# target to generate assembly for a file
+Classes/Zombie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Zombie.cpp.s
+.PHONY : Classes/Zombie.cpp.s
 
 GUI/Game.o: GUI/Game.cpp.o
 .PHONY : GUI/Game.o
@@ -210,6 +498,42 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Zombicide"
+	@echo "... Classes/Card.o"
+	@echo "... Classes/Card.i"
+	@echo "... Classes/Card.s"
+	@echo "... Classes/Character.o"
+	@echo "... Classes/Character.i"
+	@echo "... Classes/Character.s"
+	@echo "... Classes/Deck.o"
+	@echo "... Classes/Deck.i"
+	@echo "... Classes/Deck.s"
+	@echo "... Classes/Inventory.o"
+	@echo "... Classes/Inventory.i"
+	@echo "... Classes/Inventory.s"
+	@echo "... Classes/Map.o"
+	@echo "... Classes/Map.i"
+	@echo "... Classes/Map.s"
+	@echo "... Classes/Melee.o"
+	@echo "... Classes/Melee.i"
+	@echo "... Classes/Melee.s"
+	@echo "... Classes/Ranged.o"
+	@echo "... Classes/Ranged.i"
+	@echo "... Classes/Ranged.s"
+	@echo "... Classes/Space.o"
+	@echo "... Classes/Space.i"
+	@echo "... Classes/Space.s"
+	@echo "... Classes/SpawnZombie.o"
+	@echo "... Classes/SpawnZombie.i"
+	@echo "... Classes/SpawnZombie.s"
+	@echo "... Classes/Survivor.o"
+	@echo "... Classes/Survivor.i"
+	@echo "... Classes/Survivor.s"
+	@echo "... Classes/Weapon.o"
+	@echo "... Classes/Weapon.i"
+	@echo "... Classes/Weapon.s"
+	@echo "... Classes/Zombie.o"
+	@echo "... Classes/Zombie.i"
+	@echo "... Classes/Zombie.s"
 	@echo "... GUI/Game.o"
 	@echo "... GUI/Game.i"
 	@echo "... GUI/Game.s"
