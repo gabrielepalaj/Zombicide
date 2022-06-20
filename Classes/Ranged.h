@@ -4,9 +4,12 @@
 
 #ifndef ZOMBICIDE_RANGED_H
 #define ZOMBICIDE_RANGED_H
+#include "Weapon.h"
 
 
-class Ranged {
+class Ranged : public Weapon {
+    void use();
+
 
 };
 

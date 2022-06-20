@@ -8,171 +8,175 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake_modules\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
+				<Option working_dir="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Zombicide">
-				<Option output="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Zombicide" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zombicide"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Zombicide/fast">
-				<Option output="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Zombicide" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zombicide/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug"/>
+				<Option working_dir="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Zombicide">
+				<Option output="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Zombicide" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zombicide"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Zombicide/fast">
+				<Option output="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Zombicide" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 Zombicide/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nikcinigiani/Documents/Zombicide/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Card.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Card.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Card.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Card.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Character.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Character.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Character.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Character.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Deck.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Deck.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Deck.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Deck.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Inventory.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Inventory.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Inventory.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Inventory.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Map.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Map.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Map.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Map.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Melee.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Melee.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Melee.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Melee.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Ranged.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Ranged.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Ranged.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Ranged.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Space.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Space.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Space.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Space.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/SpawnZombie.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnLevel.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/SpawnZombie.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnLevel.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Survivor.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnZombie.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Survivor.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnZombie.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Weapon.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Survivor.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Weapon.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Survivor.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Zombie.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Weapon.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Zombie.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Weapon.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Game.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Zombie.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Game.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Zombie.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Menu.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/GUI/Game.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Menu.h">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/GUI/Game.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/main.cpp">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/GUI/Menu.cpp">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/CMakeLists.txt">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/GUI/Menu.h">
+			<Option target="Zombicide"/>
+		</Unit>
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/main.cpp">
+			<Option target="Zombicide"/>
+		</Unit>
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake_modules/FindSFML.cmake">
+		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/cmake_modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 	</Project>

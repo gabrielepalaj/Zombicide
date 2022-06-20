@@ -3,3 +3,7 @@
 //
 
 #include "Weapon.h"
+
+void Weapon::use() {
+
+}

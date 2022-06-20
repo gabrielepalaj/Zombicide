@@ -3,3 +3,7 @@
 //
 
 #include "Zombie.h"
+
+int Zombie::addMove() {
+    return 0;
+}

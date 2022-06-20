@@ -3,3 +3,11 @@
 //
 
 #include "Map.h"
+
+void Map::getSpace() {
+
+}
+
+void Map::create() {
+
+}

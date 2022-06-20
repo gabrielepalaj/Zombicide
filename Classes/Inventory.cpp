@@ -3,3 +3,11 @@
 //
 
 #include "Inventory.h"
+
+void Inventory::addCard() {
+
+}
+
+void Inventory::remove() {
+
+}

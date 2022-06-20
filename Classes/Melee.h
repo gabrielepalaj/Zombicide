@@ -4,9 +4,16 @@
 
 #ifndef ZOMBICIDE_MELEE_H
 #define ZOMBICIDE_MELEE_H
+#include "Weapon.h"
+
+class Melee : public Weapon {
+    void open();
+
+    void use();
 
 
-class Melee {
+protected:
+    bool openDoor;
 
 };
 

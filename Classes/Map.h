@@ -7,6 +7,14 @@
 
 
 class Map {
+    void getSpace();
+
+    void create();
+
+protected:
+    // map : Space[];
+    int xMax;
+
 
 };
 

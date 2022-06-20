@@ -7,6 +7,18 @@
 
 
 class Character {
+    virtual void move();
+
+    virtual int attack();
+
+    virtual int takeDamage();
+
+protected:
+    int movement;
+    int action;
+    int hp;
+    int posX;
+    int posY;
 
 };
 

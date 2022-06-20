@@ -3,3 +3,19 @@
 //
 
 #include "Survivor.h"
+
+void Survivor::search() {
+
+}
+
+void Survivor::openDoor() {
+
+}
+
+void Survivor::activate() {
+
+}
+
+void Survivor::makeNoise() {
+
+}

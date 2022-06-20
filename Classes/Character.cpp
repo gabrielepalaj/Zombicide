@@ -3,3 +3,15 @@
 //
 
 #include "Character.h"
+
+void Character::move() {
+
+}
+
+int Character::attack() {
+    return 0;
+}
+
+int Character::takeDamage() {
+    return 0;
+}

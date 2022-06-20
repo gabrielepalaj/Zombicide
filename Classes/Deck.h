@@ -4,9 +4,16 @@
 
 #ifndef ZOMBICIDE_DECK_H
 #define ZOMBICIDE_DECK_H
+#include "Card.h"
 
 
 class Deck {
+    void draw();
+
+    void add();
+
+private:
+    Card card[];
 
 };
 

@@ -3,3 +3,11 @@
 //
 
 #include "Deck.h"
+
+void Deck::add() {
+
+}
+
+void Deck::draw() {
+
+}

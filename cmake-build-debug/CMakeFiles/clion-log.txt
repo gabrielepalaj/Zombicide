@@ -1,5 +1,5 @@
-/snap/clion/193/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide -B /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
--- Found SFML 2.5.1 in /usr/include
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/nikcinigiani/Documents/Zombicide
+-- Found SFML 2.5.1 in /opt/homebrew/include
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
+-- Build files have been written to: /Users/nikcinigiani/Documents/Zombicide/cmake-build-debug

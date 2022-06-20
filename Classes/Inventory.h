@@ -4,10 +4,16 @@
 
 #ifndef ZOMBICIDE_INVENTORY_H
 #define ZOMBICIDE_INVENTORY_H
+#include "Card.h"
 
 
 class Inventory {
+    void addCard();
 
+    void remove();
+
+private:
+    Card cards[];
 };
 
 

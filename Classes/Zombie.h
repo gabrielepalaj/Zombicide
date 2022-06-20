@@ -5,8 +5,13 @@
 #ifndef ZOMBICIDE_ZOMBIE_H
 #define ZOMBICIDE_ZOMBIE_H
 
+#include "Character.h"
 
-class Zombie {
+
+class Zombie : public Character {
+
+    int addMove();
+
 
 };
 

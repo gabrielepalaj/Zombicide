@@ -3,3 +3,7 @@
 //
 
 #include "Melee.h"
+
+void Melee::open() {
+
+}

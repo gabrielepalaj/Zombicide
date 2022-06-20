@@ -3,3 +3,7 @@
 //
 
 #include "SpawnZombie.h"
+
+void SpawnZombie::spawn() {
+
+}

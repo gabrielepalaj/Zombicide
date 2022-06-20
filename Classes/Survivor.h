@@ -5,8 +5,24 @@
 #ifndef ZOMBICIDE_SURVIVOR_H
 #define ZOMBICIDE_SURVIVOR_H
 
+#include "Character.h"
+#include "Inventory.h"
 
-class Survivor {
+
+class Survivor : public Character {
+    void search();
+
+    void openDoor();
+
+    void activate();
+
+    void makeNoise();
+
+private :
+    int nPlayer;
+    int exp;
+    // Inventory : inventory;
+    bool noise;
 
 };
 
