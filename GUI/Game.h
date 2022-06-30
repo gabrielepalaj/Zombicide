@@ -7,6 +7,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
 #include <iostream>
+#include "Menu.h"
 
 #ifndef ZOMBICIDE_GAME_H
 #define ZOMBICIDE_GAME_H
@@ -18,8 +19,9 @@
 class Game {
 private:
     //variables
+    State state;
     //Window
-    sf::RenderWindow* app;
+    sf::RenderWindow *app;
     sf::VideoMode videoMode;
     sf::Event event;
 
@@ -38,6 +40,9 @@ public:
 
     //Accessors
     bool isRunning() const;
+
+    State updateState() const;
+
     //Methods
     void pollEvents();
     void run();

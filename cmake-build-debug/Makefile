@@ -297,54 +297,6 @@ Classes/Ranged.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.s
 .PHONY : Classes/Ranged.cpp.s
 
-Classes/Space.o: Classes/Space.cpp.o
-.PHONY : Classes/Space.o
-
-# target to build an object file
-Classes/Space.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Space.cpp.o
-.PHONY : Classes/Space.cpp.o
-
-Classes/Space.i: Classes/Space.cpp.i
-.PHONY : Classes/Space.i
-
-# target to preprocess a source file
-Classes/Space.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Space.cpp.i
-.PHONY : Classes/Space.cpp.i
-
-Classes/Space.s: Classes/Space.cpp.s
-.PHONY : Classes/Space.s
-
-# target to generate assembly for a file
-Classes/Space.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Space.cpp.s
-.PHONY : Classes/Space.cpp.s
-
-Classes/SpawnLevel.o: Classes/SpawnLevel.cpp.o
-.PHONY : Classes/SpawnLevel.o
-
-# target to build an object file
-Classes/SpawnLevel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/SpawnLevel.cpp.o
-.PHONY : Classes/SpawnLevel.cpp.o
-
-Classes/SpawnLevel.i: Classes/SpawnLevel.cpp.i
-.PHONY : Classes/SpawnLevel.i
-
-# target to preprocess a source file
-Classes/SpawnLevel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/SpawnLevel.cpp.i
-.PHONY : Classes/SpawnLevel.cpp.i
-
-Classes/SpawnLevel.s: Classes/SpawnLevel.cpp.s
-.PHONY : Classes/SpawnLevel.s
-
-# target to generate assembly for a file
-Classes/SpawnLevel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/SpawnLevel.cpp.s
-.PHONY : Classes/SpawnLevel.cpp.s
-
 Classes/SpawnZombie.o: Classes/SpawnZombie.cpp.o
 .PHONY : Classes/SpawnZombie.o
 
@@ -543,12 +495,6 @@ help:
 	@echo "... Classes/Ranged.o"
 	@echo "... Classes/Ranged.i"
 	@echo "... Classes/Ranged.s"
-	@echo "... Classes/Space.o"
-	@echo "... Classes/Space.i"
-	@echo "... Classes/Space.s"
-	@echo "... Classes/SpawnLevel.o"
-	@echo "... Classes/SpawnLevel.i"
-	@echo "... Classes/SpawnLevel.s"
 	@echo "... Classes/SpawnZombie.o"
 	@echo "... Classes/SpawnZombie.i"
 	@echo "... Classes/SpawnZombie.s"

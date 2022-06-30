@@ -7,6 +7,7 @@
 //private methods
 void Game::initVariables() {
     this->app = nullptr;
+    this->state = State::Game;
 
 }
 
@@ -60,10 +61,12 @@ void Game::pollEvents() {
 
         switch (this->event.type) {
             case sf::Event::Closed:
+                state = State::End;
                 this->app->close();
                 break;
             case sf::Event::KeyPressed:
                 if (this->event.key.code == sf::Keyboard::Escape) {
+                    state = State::End;
                     this->app->close();
                 }
                 break;
@@ -111,6 +114,10 @@ void Game::run() {
         this->update();
         this->render();
     }
+}
+
+State Game::updateState() const {
+    return state;
 }
 
 

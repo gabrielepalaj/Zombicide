@@ -3,41 +3,12 @@
 //
 
 #include "Menu.h"
+#include "Game.h"
 
 //private methods
 void Menu::initVariables() {
     this->app = nullptr;
-    /*
-    //Prova di scrittura menù, DA CAMBIARE
-    sf::Texture texture;
-    texture.loadFromFile("../Resources/Images/Menu.png");
-    sf::Sprite sprite(texture);
-    sprite.setPosition(0, 0);
-    sprite.setScale(1.0f, 1.0f);
-    this->app->setView(sf::View(sf::FloatRect(0, 0, sprite.getGlobalBounds().width, sprite.getGlobalBounds().height)));
-
-
-    //draw button Gioca (play) with image ../Resources/Images/Gioca.png
-    sf::Texture texturePlay;
-    texturePlay.loadFromFile("../Resources/Images/Gioca.png");
-    play.setTexture(texturePlay);
-    play.setPosition(this->app->getSize().x / 2 - play.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - play.getGlobalBounds().height / 2) + 50);
-    play.setScale(1.0f, 1.0f);
-
-    //draw button Opzioni (options) with image ../Resources/Images/Opzioni.png
-    sf::Texture textureOptions;
-    textureOptions.loadFromFile("../Resources/Images/Opzioni.png");
-    options.setTexture(textureOptions);
-    options.setPosition(this->app->getSize().x / 2 - options.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - options.getGlobalBounds().height / 2) + 100);
-    options.setScale(1.0f, 1.0f);
-
-    //draw button Esci (exit) with image ../Resources/Images/Esci.png
-    sf::Texture textureExit;
-    textureExit.loadFromFile("../Resources/Images/Esci.png");
-    exit.setTexture(textureExit);
-    exit.setPosition(this->app->getSize().x / 2 - exit.getGlobalBounds().width / 2, (this->app->getSize().y / 2 - exit.getGlobalBounds().height / 2) + 150);
-    exit.setScale(1.0f, 1.0f);
-     */
+    state = State::Menu;
 
 }
 
@@ -78,10 +49,16 @@ void Menu::pollEvents() {
 
         switch (this->event.type) {
             case sf::Event::Closed:
+                state = State::End;
                 this->app->close();
                 break;
             case sf::Event::KeyPressed:
                 if (this->event.key.code == sf::Keyboard::Escape) {
+                    state = State::End;
+                    this->app->close();
+                }
+                if (this->event.key.code == sf::Keyboard::Enter) {
+                    state = State::Game;
                     this->app->close();
                 }
                 break;
@@ -135,17 +112,26 @@ void Menu::render() {
 
 
 
-
-
-
     this->app->display();
 }
 
 void Menu::run() {
+    Game *game;
 
-
-    while (this->isRunning()) {
-        this->update();
-        this->render();
+    while (state != State::End) {
+        while (this->isRunning() && state == State::Menu) {
+            this->update();
+            this->render();
+        }
+        if (state == State::Game) {
+            game = new Game();
+        }
+        while (game->isRunning() && state == State::Game) {
+            game->update();
+            game->render();
+            state = game->updateState();
+        }
     }
+
+
 }

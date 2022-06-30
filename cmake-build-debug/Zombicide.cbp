@@ -122,18 +122,6 @@
 		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Ranged.h">
 			<Option target="Zombicide"/>
 		</Unit>
-		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Space.cpp">
-			<Option target="Zombicide"/>
-		</Unit>
-		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/Space.h">
-			<Option target="Zombicide"/>
-		</Unit>
-		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnLevel.cpp">
-			<Option target="Zombicide"/>
-		</Unit>
-		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnLevel.h">
-			<Option target="Zombicide"/>
-		</Unit>
 		<Unit filename="/Users/nikcinigiani/Documents/Zombicide/Classes/SpawnZombie.cpp">
 			<Option target="Zombicide"/>
 		</Unit>

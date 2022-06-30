@@ -8,7 +8,6 @@ int main(int argc, char* argv[]) {
 
     //Init game engine
     Menu menu;
-
-
     menu.run();
+
 }

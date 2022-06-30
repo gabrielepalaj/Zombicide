@@ -11,16 +11,21 @@
 #ifndef ZOMBICIDE_MENU_H
 #define ZOMBICIDE_MENU_H
 
+enum class State {
+    Menu, Game, End
+};
 
 class Menu {
 private:
     //variables
+    State state;    //current state
+
     //Window
-    sf::RenderWindow* app;
+    sf::RenderWindow *app;
     sf::VideoMode videoMode;
     sf::Event event;
 
-    
+
     //Buttons
     sf::Sprite play;
     sf::Sprite options;
