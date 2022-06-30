@@ -21,29 +21,42 @@ private:
     State state;    //current state
 
     //Window
-    sf::RenderWindow *app;
+    std::unique_ptr<sf::RenderWindow> app;
     sf::VideoMode videoMode;
     sf::Event event;
 
 
+    //Textures
+    std::unique_ptr<sf::Texture> textureTitle;
+    std::unique_ptr<sf::Texture> texturePlay;
+    std::unique_ptr<sf::Texture> textureExit;
+    //Title
+    std::unique_ptr<sf::Sprite> title;
     //Buttons
-    sf::Sprite play;
-    sf::Sprite options;
-    sf::Sprite exit;
-    
+    //create smart poinert to sprite buttons
+    std::unique_ptr<sf::Sprite> buttonPlay;
+    std::unique_ptr<sf::Sprite> buttonExit;
+    //sf::Sprite *buttonCredits;
+
 
 
     //private methods
     void initVariables();
+
     void initWindow();
+
+    void initButtons();
+
 
 public:
     //Costructors / destructors
     Menu();
+
     ~Menu();
 
     //Accessors
     bool isRunning() const;
+
     //Methods
     void pollEvents();
     void run();

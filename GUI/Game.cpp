@@ -25,22 +25,11 @@ void Game::initWindow() {
 
 }
 
-void Game::initEnemies(){
-    //posizione in base all'angolo alto-sx
-
-    this->enemy.setSize(sf::Vector2f(50.f, 50.f));
-    this->enemy.setPosition(100, 100);
-    this->enemy.setFillColor(sf::Color::Red);
-    this->enemy.setOutlineColor(sf::Color::Blue);
-    this->enemy.setOutlineThickness(2.f);
-
-}
 
 //Constructors / destructors
 Game::Game() {
     this->initVariables();
     this->initWindow();
-    this->initEnemies();
 
 }
 
@@ -103,7 +92,6 @@ void Game::render() {
     this->app->clear();
 
     //Draw game here
-    this->app->draw(this->enemy);
 
 
     this->app->display();

@@ -9,19 +9,57 @@
 void Menu::initVariables() {
     this->app = nullptr;
     state = State::Menu;
-
 }
 
 void Menu::initWindow() {
     //init height and width 1/3 of the screen
-    this->videoMode.width = 800;
-    this->videoMode.height = 600;
+    this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.55);
+    this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.55);
 
-    this->app = new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Titlebar | sf::Style::Close);
+    this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Close | sf::Style::Titlebar));
     this->app->setFramerateLimit(60);
+    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2,
+                                        sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
 
-    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2, sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
+    //set sprite title as background
+    this->title.reset(new sf::Sprite());
+    textureTitle.reset(new sf::Texture());
+    textureTitle->loadFromFile("../Resources/Images/Menu.png");
+    this->title->setTexture(*this->textureTitle);
+    this->title->setPosition(sf::Vector2f(0, 0));
 
+    //adapt the size of the background to the window
+    this->title->setScale(sf::Vector2f(this->videoMode.width / this->title->getTexture()->getSize().x,
+                                       this->videoMode.height / this->title->getTexture()->getSize().y));
+
+
+}
+
+
+void Menu::initButtons() {
+
+    //Initialize
+    this->buttonPlay.reset(new sf::Sprite());
+    this->buttonExit.reset(new sf::Sprite());
+
+    //create texture for buttons
+    texturePlay.reset(new sf::Texture());
+    textureExit.reset(new sf::Texture());
+
+    texturePlay->loadFromFile("../Resources/Images/Gioca.png");
+    textureExit->loadFromFile("../Resources/Images/Esci.png");
+
+    //set texture for buttons
+    this->buttonPlay->setTexture(*this->texturePlay);
+    this->buttonExit->setTexture(*this->textureExit);
+
+    //set buttons positions
+    this->buttonPlay->setPosition(
+            sf::Vector2f(this->app->getSize().x / 2 - this->buttonPlay->getGlobalBounds().width / 2,
+                         this->app->getSize().y / 2 - this->buttonPlay->getGlobalBounds().height / 2));
+    this->buttonExit->setPosition(
+            sf::Vector2f(this->app->getSize().x / 2 - this->buttonExit->getGlobalBounds().width / 2,
+                         this->app->getSize().y / 2 + this->buttonExit->getGlobalBounds().height / 2));
 }
 
 
@@ -29,11 +67,12 @@ void Menu::initWindow() {
 Menu::Menu() {
     this->initVariables();
     this->initWindow();
+    this->initButtons();
 
 }
 
 Menu::~Menu() {
-    delete this->app;
+
 }
 
 //Accessors
@@ -62,6 +101,20 @@ void Menu::pollEvents() {
                     this->app->close();
                 }
                 break;
+            case sf::Event::MouseButtonPressed:
+                if (this->event.mouseButton.button == sf::Mouse::Left) {
+                    if (this->buttonPlay->getGlobalBounds().contains(
+                            this->app->mapPixelToCoords(sf::Mouse::getPosition(*this->app)))) {
+                        state = State::Game;
+                        this->app->close();
+                    }
+                    if (this->buttonExit->getGlobalBounds().contains(
+                            this->app->mapPixelToCoords(sf::Mouse::getPosition(*this->app)))) {
+                        state = State::End;
+                        this->app->close();
+                    }
+                }
+                break;
             default:
                 break;
         }
@@ -72,23 +125,7 @@ void Menu::pollEvents() {
 void Menu::update() {
     this->pollEvents();
 
-    //update mouse position relative to the window
-    //std::cout<<"Mouse position: " + std::to_string(sf::Mouse::getPosition(*this->app).x) + " " + std::to_string(sf::Mouse::getPosition(*this->app).y)<<std::endl;
-    //update mouse position relative to the screen
-    //std::cout<<"Mouse position: " + std::to_string(sf::Mouse::getPosition().x) + " " + std::to_string(sf::Mouse::getPosition().y)<<std::endl;
 
-    //update enemy position relative to the mouse position
-    //this->enemy.setPosition(sf::Mouse::getPosition(*this->app).x-(enemy.getSize().x/2), sf::Mouse::getPosition(*this->app).y -(enemy.getSize().y/2));
-
-    /*
-    //when mouse over Gioca button -> make it bigger
-    if (sf::Mouse::getPosition(*this->app).x > this->play.getPosition().x && sf::Mouse::getPosition(*this->app).x < this->play.getPosition().x + this->play.getGlobalBounds().width &&
-        sf::Mouse::getPosition(*this->app).y > this->play.getPosition().y && sf::Mouse::getPosition(*this->app).y < this->play.getPosition().y + this->play.getGlobalBounds().height) {
-        this->play.setScale(1.2, 1.2);
-    } else {
-        this->play.setScale(1, 1);
-    }
-    */
 
 }
 
@@ -104,12 +141,12 @@ void Menu::render() {
      */
     this->app->clear();
 
-    //Draw Menu here
+    //draw menu here
 
-    this->app->draw(this->play);
-    this->app->draw(this->options);
-    this->app->draw(this->exit);
 
+    this->app->draw(*(this->title));
+    this->app->draw(*(this->buttonPlay));
+    this->app->draw(*(this->buttonExit));
 
 
     this->app->display();
@@ -135,3 +172,4 @@ void Menu::run() {
 
 
 }
+

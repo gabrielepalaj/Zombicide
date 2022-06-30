@@ -25,13 +25,10 @@ private:
     sf::VideoMode videoMode;
     sf::Event event;
 
-    //Enemies
-    sf::RectangleShape enemy;
 
     //private methods
     void initVariables();
     void initWindow();
-    void initEnemies();
 
 public:
     //Costructors / destructors
