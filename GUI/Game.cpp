@@ -13,15 +13,25 @@ void Game::initVariables() {
 
 void Game::initWindow() {
     //init height and width 1/3 of the screen
-    this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.45);
-    this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.45);
-    //this->videoMode.height = 600;
-    //this->videoMode.width = 800;
+    this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.7);
+    this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.7);
 
-    this->app = new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Titlebar | sf::Style::Close);
+    //set sprite background as background
+    this->background.reset(new sf::Sprite());
+    textureBackground.reset(new sf::Texture());
+    textureBackground->loadFromFile("../Resources/Images/Game.png");
+    this->background->setTexture(*this->textureBackground);
+    this->background->setPosition(sf::Vector2f(0, 0));
+
+    //set background scale relative to the window
+    this->background->setScale(sf::Vector2f(this->videoMode.width / this->background->getGlobalBounds().width,
+                                            this->videoMode.height / this->background->getGlobalBounds().height));
+
+
+    this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Titlebar | sf::Style::Close));
     this->app->setFramerateLimit(60);
-    
-    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2, sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
+    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2,
+                                        sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
 
 }
 
@@ -34,7 +44,7 @@ Game::Game() {
 }
 
 Game::~Game() {
-    delete this->app;
+
 }
 
 //Accessors
@@ -92,6 +102,8 @@ void Game::render() {
     this->app->clear();
 
     //Draw game here
+
+    this->app->draw(*this->background);
 
 
     this->app->display();

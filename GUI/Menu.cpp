@@ -16,16 +16,16 @@ void Menu::initWindow() {
     this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.5);
     this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.55);
 
-    //set sprite title as background
-    this->title.reset(new sf::Sprite());
-    textureTitle.reset(new sf::Texture());
-    textureTitle->loadFromFile("../Resources/Images/Menu.png");
-    this->title->setTexture(*this->textureTitle);
-    this->title->setPosition(sf::Vector2f(0, 0));
+    //set sprite background as background
+    this->background.reset(new sf::Sprite());
+    textureBackground.reset(new sf::Texture());
+    textureBackground->loadFromFile("../Resources/Images/Menu.png");
+    this->background->setTexture(*this->textureBackground);
+    this->background->setPosition(sf::Vector2f(0, 0));
 
-    //set scale relative to the window
-    this->title->setScale(sf::Vector2f(this->videoMode.width / this->title->getGlobalBounds().width,
-                                       this->videoMode.height / this->title->getGlobalBounds().height));
+    //set background scale relative to the window
+    this->background->setScale(sf::Vector2f(this->videoMode.width / this->background->getGlobalBounds().width,
+                                            this->videoMode.height / this->background->getGlobalBounds().height));
 
     this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Close | sf::Style::Titlebar));
     this->app->setFramerateLimit(60);
@@ -149,8 +149,7 @@ void Menu::render() {
 
     //draw menu here
 
-
-    this->app->draw(*(this->title));
+    this->app->draw(*(this->background));
     this->app->draw(*(this->buttonPlay));
     this->app->draw(*(this->buttonExit));
 

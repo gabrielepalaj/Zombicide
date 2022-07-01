@@ -21,18 +21,26 @@ private:
     //variables
     State state;
     //Window
-    sf::RenderWindow *app;
+    std::unique_ptr<sf::RenderWindow> app;
     sf::VideoMode videoMode;
     sf::Event event;
+
+    //Textures
+    std::unique_ptr<sf::Texture> textureBackground;
+
+    //Background
+    std::unique_ptr<sf::Sprite> background;
 
 
     //private methods
     void initVariables();
+
     void initWindow();
 
 public:
     //Costructors / destructors
     Game();
+
     ~Game();
 
     //Accessors

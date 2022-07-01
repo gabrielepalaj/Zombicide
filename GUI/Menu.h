@@ -27,11 +27,11 @@ private:
 
 
     //Textures
-    std::unique_ptr<sf::Texture> textureTitle;
+    std::unique_ptr<sf::Texture> textureBackground;
     std::unique_ptr<sf::Texture> texturePlay;
     std::unique_ptr<sf::Texture> textureExit;
-    //Title
-    std::unique_ptr<sf::Sprite> title;
+    //Background
+    std::unique_ptr<sf::Sprite> background;
     //Buttons
     //create smart poinert to sprite buttons
     std::unique_ptr<sf::Sprite> buttonPlay;
