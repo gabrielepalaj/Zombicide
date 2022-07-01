@@ -13,7 +13,7 @@ class Inventory {
     void remove();
 
 private:
-    Card cards[];
+    Card cards[10];
 };
 
 

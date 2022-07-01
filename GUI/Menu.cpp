@@ -13,13 +13,8 @@ void Menu::initVariables() {
 
 void Menu::initWindow() {
     //init height and width 1/3 of the screen
-    this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.55);
+    this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.5);
     this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.55);
-
-    this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Close | sf::Style::Titlebar));
-    this->app->setFramerateLimit(60);
-    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2,
-                                        sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
 
     //set sprite title as background
     this->title.reset(new sf::Sprite());
@@ -28,10 +23,14 @@ void Menu::initWindow() {
     this->title->setTexture(*this->textureTitle);
     this->title->setPosition(sf::Vector2f(0, 0));
 
-    //adapt the size of the background to the window
-    this->title->setScale(sf::Vector2f(this->videoMode.width / this->title->getTexture()->getSize().x,
-                                       this->videoMode.height / this->title->getTexture()->getSize().y));
+    //set scale relative to the window
+    this->title->setScale(sf::Vector2f(this->videoMode.width / this->title->getGlobalBounds().width,
+                                       this->videoMode.height / this->title->getGlobalBounds().height));
 
+    this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Close | sf::Style::Titlebar));
+    this->app->setFramerateLimit(60);
+    this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2,
+                                        sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
 
 }
 
@@ -56,10 +55,17 @@ void Menu::initButtons() {
     //set buttons positions
     this->buttonPlay->setPosition(
             sf::Vector2f(this->app->getSize().x / 2 - this->buttonPlay->getGlobalBounds().width / 2,
-                         this->app->getSize().y / 2 - this->buttonPlay->getGlobalBounds().height / 2));
+                         this->app->getSize().y / 2 - this->buttonPlay->getGlobalBounds().height / 2 + 50));
     this->buttonExit->setPosition(
             sf::Vector2f(this->app->getSize().x / 2 - this->buttonExit->getGlobalBounds().width / 2,
-                         this->app->getSize().y / 2 + this->buttonExit->getGlobalBounds().height / 2));
+                         this->app->getSize().y / 2 + this->buttonExit->getGlobalBounds().height / 2 + 50));
+
+    //set scale relative to the window, the buttons are 0.2 of the window size
+    this->buttonPlay->setScale(sf::Vector2f(this->videoMode.width / this->buttonPlay->getGlobalBounds().width * 0.3,
+                                            this->videoMode.height / this->buttonPlay->getGlobalBounds().height * 0.2));
+    this->buttonExit->setScale(sf::Vector2f(this->videoMode.width / this->buttonExit->getGlobalBounds().width * 0.2,
+                                            this->videoMode.height / this->buttonExit->getGlobalBounds().height * 0.2));
+
 }
 
 

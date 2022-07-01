@@ -13,7 +13,7 @@ class Deck {
     void add();
 
 private:
-    Card card[];
+    Card card[10];
 
 };
 
