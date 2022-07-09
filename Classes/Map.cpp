@@ -4,10 +4,13 @@
 
 #include "Map.h"
 
-void Map::getSpace() {
-
-}
 
 void Map::create() {
 
 }
+
+Space Map::getSpace(int x, int y) {
+    return map.at(x * yMax + y);
+}
+
+

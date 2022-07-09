@@ -6,7 +6,16 @@
 #define ZOMBICIDE_CHARACTER_H
 
 
-class Character {
+#include <SFML/Graphics/Sprite.hpp>
+
+class Character : public sf::Sprite {
+
+public:
+
+    Character();
+
+    ~Character() override;
+
     virtual void move();
 
     virtual int attack();

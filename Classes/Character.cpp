@@ -15,3 +15,15 @@ int Character::attack() {
 int Character::takeDamage() {
     return 0;
 }
+
+Character::~Character() {
+
+}
+
+Character::Character() {
+
+}
+
+Character::Character(Players player) {
+
+}

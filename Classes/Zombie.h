@@ -7,8 +7,16 @@
 
 #include "Character.h"
 
+enum class Zombies {
+    walker, runner, fatty, abomination
+};
 
 class Zombie : public Character {
+
+public:
+    explicit Zombie(Zombies zombie);
+
+    ~Zombie() override;
 
     int addMove();
 

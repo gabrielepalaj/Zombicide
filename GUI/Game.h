@@ -8,6 +8,7 @@
 #include <SFML/Network.hpp>
 #include <iostream>
 #include "Menu.h"
+#include "../Classes/Character.h"
 
 #ifndef ZOMBICIDE_GAME_H
 #define ZOMBICIDE_GAME_H
@@ -20,6 +21,8 @@ class Game {
 private:
     //variables
     State state;
+    std::vector<std::unique_ptr<Character>> players;
+    std::vector<std::unique_ptr<Character>> zombies;
     //Window
     std::unique_ptr<sf::RenderWindow> app;
     sf::VideoMode videoMode;
@@ -37,6 +40,14 @@ private:
 
     void initWindow();
 
+    void initPlayers();
+
+    void initZombies();
+
+    void drawPlayers();
+
+    void drawZombies();
+
 public:
     //Costructors / destructors
     Game();
@@ -53,6 +64,7 @@ public:
     void run();
     void update();
     void render();
+
 };
 
 

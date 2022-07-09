@@ -4,6 +4,9 @@
 
 #include "Game.h"
 
+#include <memory>
+#include "../Classes/Survivor.h"
+
 //private methods
 void Game::initVariables() {
     this->app = nullptr;
@@ -17,8 +20,8 @@ void Game::initWindow() {
     this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.7);
 
     //set sprite background as background
-    this->background.reset(new sf::Sprite());
-    textureBackground.reset(new sf::Texture());
+    this->background = std::make_unique<sf::Sprite>();
+    this->textureBackground = std::make_unique<sf::Texture>();
     textureBackground->loadFromFile("../Resources/Images/Game.png");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
@@ -28,11 +31,36 @@ void Game::initWindow() {
                                             this->videoMode.height / this->background->getGlobalBounds().height));
 
 
-    this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Titlebar | sf::Style::Close));
+    this->app = std::make_unique<sf::RenderWindow>(this->videoMode, "Zombicide",
+                                                   sf::Style::Titlebar | sf::Style::Close);
     this->app->setFramerateLimit(60);
     this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2,
                                         sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
 
+}
+
+void Game::initPlayers() {
+
+    this->players.push_back(std::make_unique<Survivor>(Players::Player1));
+    this->players.push_back(std::make_unique<Survivor>(Players::Player2));
+    this->players.push_back(std::make_unique<Survivor>(Players::Player3));
+
+}
+
+void Game::initZombies() {
+}
+
+
+void Game::drawPlayers() {
+    for (auto &player: this->players) {
+        this->app->draw(*player);
+    }
+}
+
+void Game::drawZombies() {
+    for (auto &zombie: this->zombies) {
+        this->app->draw(*zombie);
+    }
 }
 
 
@@ -40,7 +68,7 @@ void Game::initWindow() {
 Game::Game() {
     this->initVariables();
     this->initWindow();
-
+    this->initPlayers();
 }
 
 Game::~Game() {
@@ -79,14 +107,6 @@ void Game::pollEvents() {
 void Game::update() {
     this->pollEvents();
 
-    //update mouse position relative to the window
-    //std::cout<<"Mouse position: " + std::to_string(sf::Mouse::getPosition(*this->app).x) + " " + std::to_string(sf::Mouse::getPosition(*this->app).y)<<std::endl;
-    //update mouse position relative to the screen
-    //std::cout<<"Mouse position: " + std::to_string(sf::Mouse::getPosition().x) + " " + std::to_string(sf::Mouse::getPosition().y)<<std::endl;
-
-    //update enemy position relative to the mouse position
-    //this->enemy.setPosition(sf::Mouse::getPosition(*this->app).x-(enemy.getSize().x/2), sf::Mouse::getPosition(*this->app).y -(enemy.getSize().y/2));
-
 }
 
 void Game::render() {
@@ -119,6 +139,9 @@ void Game::run() {
 State Game::updateState() const {
     return state;
 }
+
+
+
 
 
 

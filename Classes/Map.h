@@ -1,20 +1,26 @@
 //
 // Created by gabriele on 17/06/22.
 //
+#include <iostream>
+#include <vector>
+#include <memory>
 
 #ifndef ZOMBICIDE_MAP_H
 #define ZOMBICIDE_MAP_H
 
+enum class Space {
+    Door, Wall, Street, Empty
+};
 
 class Map {
-    void getSpace();
+    Space getSpace(int x, int y);
 
     void create();
 
-protected:
-    // map : Space[];
+private:
+    std::vector<Space> map;
     int xMax;
-
+    int yMax;
 
 };
 

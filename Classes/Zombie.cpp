@@ -4,6 +4,18 @@
 
 #include "Zombie.h"
 
+Zombie::Zombie(Zombies zombie) {
+
+}
+
+Zombie::~Zombie() {
+
+}
+
+
 int Zombie::addMove() {
     return 0;
 }
+
+
+

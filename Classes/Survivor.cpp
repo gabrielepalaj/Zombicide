@@ -4,6 +4,12 @@
 
 #include "Survivor.h"
 
+
+Survivor::Survivor(Players player) {
+    this->setColor(sf::Color::Blue);
+
+}
+
 void Survivor::search() {
 
 }
@@ -17,5 +23,9 @@ void Survivor::activate() {
 }
 
 void Survivor::makeNoise() {
+
+}
+
+Survivor::~Survivor() {
 
 }

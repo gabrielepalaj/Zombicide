@@ -3,6 +3,8 @@
 //
 
 #include "Menu.h"
+
+#include <memory>
 #include "Game.h"
 
 //private methods
@@ -17,8 +19,8 @@ void Menu::initWindow() {
     this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.55);
 
     //set sprite background as background
-    this->background.reset(new sf::Sprite());
-    textureBackground.reset(new sf::Texture());
+    this->background = std::make_unique<sf::Sprite>();
+    textureBackground = std::make_unique<sf::Texture>();
     textureBackground->loadFromFile("../Resources/Images/Menu.png");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
@@ -27,7 +29,8 @@ void Menu::initWindow() {
     this->background->setScale(sf::Vector2f(this->videoMode.width / this->background->getGlobalBounds().width,
                                             this->videoMode.height / this->background->getGlobalBounds().height));
 
-    this->app.reset(new sf::RenderWindow(this->videoMode, "Zombicide", sf::Style::Close | sf::Style::Titlebar));
+    this->app = std::make_unique<sf::RenderWindow>(this->videoMode, "Zombicide",
+                                                   sf::Style::Close | sf::Style::Titlebar);
     this->app->setFramerateLimit(60);
     this->app->setPosition(sf::Vector2i(sf::VideoMode::getDesktopMode().width / 2 - this->videoMode.width / 2,
                                         sf::VideoMode::getDesktopMode().height / 2 - this->videoMode.height / 2));
@@ -38,12 +41,12 @@ void Menu::initWindow() {
 void Menu::initButtons() {
 
     //Initialize
-    this->buttonPlay.reset(new sf::Sprite());
-    this->buttonExit.reset(new sf::Sprite());
+    this->buttonPlay = std::make_unique<sf::Sprite>();
+    this->buttonExit = std::make_unique<sf::Sprite>();
 
     //create texture for buttons
-    texturePlay.reset(new sf::Texture());
-    textureExit.reset(new sf::Texture());
+    texturePlay = std::make_unique<sf::Texture>();
+    textureExit = std::make_unique<sf::Texture>();
 
     texturePlay->loadFromFile("../Resources/Images/Gioca.png");
     textureExit->loadFromFile("../Resources/Images/Esci.png");

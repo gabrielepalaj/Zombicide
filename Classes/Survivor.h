@@ -8,8 +8,18 @@
 #include "Character.h"
 #include "Inventory.h"
 
+enum class Players {
+    Player1, Player2, Player3
+};
+
 
 class Survivor : public Character {
+public:
+
+    explicit Survivor(Players player);
+
+    ~Survivor() override;
+
     void search();
 
     void openDoor();
