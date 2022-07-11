@@ -4,11 +4,21 @@
 
 #include "Survivor.h"
 
+Survivor::Survivor(Players player, sf::Vector2f position) : Character(position) {
+    this->player = player;
+    this->inventory = std::make_unique<Inventory>();
+    this->texture = std::make_unique<sf::Texture>();
+    this->texture->loadFromFile("../Resources/Images/provaCT.jpg");
+    this->setTexture(*this->texture);
+    //set scale 1/20 of the window size
+    this->setScale(0.03, 0.03);
 
-Survivor::Survivor(Players player) {
-    this->setColor(sf::Color::Blue);
-
+    this->nPlayer = 0;
+    this->exp = 0;
+    this->noise = false;
 }
+
+
 
 void Survivor::search() {
 
@@ -29,3 +39,5 @@ void Survivor::makeNoise() {
 Survivor::~Survivor() {
 
 }
+
+

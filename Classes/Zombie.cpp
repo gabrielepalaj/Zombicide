@@ -4,9 +4,15 @@
 
 #include "Zombie.h"
 
-Zombie::Zombie(Zombies zombie) {
+Zombie::Zombie(Zombies zombie, sf::Vector2f position) : Character(position) {
+
+    this->texture = std::make_unique<sf::Texture>();
+    this->texture->loadFromFile("../Resources/Images/Gioca.png");
+    this->setTexture(*this->texture);
 
 }
+
+
 
 Zombie::~Zombie() {
 

@@ -4,23 +4,31 @@
 #include <iostream>
 #include <vector>
 #include <memory>
+#include "Character.h"
 
 #ifndef ZOMBICIDE_MAP_H
 #define ZOMBICIDE_MAP_H
 
 enum class Space {
-    Door, Wall, Street, Empty
+    Wall, Street, Room, Empty
 };
 
 class Map {
-    Space getSpace(int x, int y);
 
-    void create();
 
 private:
+    void create();
+
     std::vector<Space> map;
-    int xMax;
-    int yMax;
+    float xMax;
+    float yMax;
+
+public:
+    Map(float x, float y);
+
+    Space getSpace(sf::Vector2f position);
+
+    bool existSpace(sf::Vector2f position);
 
 };
 

@@ -6,6 +6,9 @@
 #define ZOMBICIDE_ZOMBIE_H
 
 #include "Character.h"
+#include <iostream>
+#include <memory>
+#include <SFML/Graphics/Texture.hpp>
 
 enum class Zombies {
     walker, runner, fatty, abomination
@@ -14,11 +17,15 @@ enum class Zombies {
 class Zombie : public Character {
 
 public:
-    explicit Zombie(Zombies zombie);
+    Zombie(Zombies zombie, sf::Vector2f position);
 
     ~Zombie() override;
 
     int addMove();
+
+private:
+    Zombies zombie;
+    std::unique_ptr<sf::Texture> texture;
 
 
 };

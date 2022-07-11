@@ -5,6 +5,8 @@
 #ifndef ZOMBICIDE_CHARACTER_H
 #define ZOMBICIDE_CHARACTER_H
 
+//scala di differenza tra la posizione nella mappa e la posizione in pixel
+#define SCALE 50
 
 #include <SFML/Graphics/Sprite.hpp>
 
@@ -12,11 +14,11 @@ class Character : public sf::Sprite {
 
 public:
 
-    Character();
+    explicit Character(sf::Vector2f position);
 
     ~Character() override;
 
-    virtual void move();
+    virtual void move(sf::Vector2f position);
 
     virtual int attack();
 
@@ -26,8 +28,8 @@ protected:
     int movement;
     int action;
     int hp;
-    int posX;
-    int posY;
+    float posX;
+    float posY;
 
 };
 

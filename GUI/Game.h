@@ -9,6 +9,7 @@
 #include <iostream>
 #include "Menu.h"
 #include "../Classes/Character.h"
+#include "../Classes/Map.h"
 
 #ifndef ZOMBICIDE_GAME_H
 #define ZOMBICIDE_GAME_H
@@ -27,6 +28,7 @@ private:
     std::unique_ptr<sf::RenderWindow> app;
     sf::VideoMode videoMode;
     sf::Event event;
+    std::unique_ptr<Map> map;
 
     //Textures
     std::unique_ptr<sf::Texture> textureBackground;
@@ -42,11 +44,17 @@ private:
 
     void initPlayers();
 
+    void initMap();
+
     void initZombies();
 
     void drawPlayers();
 
     void drawZombies();
+
+    std::vector<Character> getCharacters(sf::Vector2f position);
+
+    bool isLegalMove(Character ct, sf::Vector2f position);
 
 public:
     //Costructors / destructors
@@ -61,9 +69,15 @@ public:
 
     //Methods
     void pollEvents();
+
     void run();
+
     void update();
+
     void render();
+
+    //Map management
+
 
 };
 

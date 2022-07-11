@@ -7,6 +7,9 @@
 
 #include "Character.h"
 #include "Inventory.h"
+#include <iostream>
+#include <memory>
+#include <SFML/Graphics/Texture.hpp>
 
 enum class Players {
     Player1, Player2, Player3
@@ -16,7 +19,7 @@ enum class Players {
 class Survivor : public Character {
 public:
 
-    explicit Survivor(Players player);
+    Survivor(Players player, sf::Vector2f position);
 
     ~Survivor() override;
 
@@ -29,9 +32,12 @@ public:
     void makeNoise();
 
 private :
+    Players player;
+    std::unique_ptr<Inventory> inventory;
+    std::unique_ptr<sf::Texture> texture;
     int nPlayer;
     int exp;
-    // Inventory : inventory;
+
     bool noise;
 
 };

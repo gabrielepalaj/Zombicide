@@ -6,12 +6,15 @@
 
 #include <memory>
 #include "../Classes/Survivor.h"
+#include "../Classes/Map.h"
+
+#define START_X 1
+#define START_Y 1
 
 //private methods
 void Game::initVariables() {
     this->app = nullptr;
     this->state = State::Game;
-
 }
 
 void Game::initWindow() {
@@ -41,13 +44,19 @@ void Game::initWindow() {
 
 void Game::initPlayers() {
 
-    this->players.push_back(std::make_unique<Survivor>(Players::Player1));
-    this->players.push_back(std::make_unique<Survivor>(Players::Player2));
-    this->players.push_back(std::make_unique<Survivor>(Players::Player3));
+    this->players.push_back(std::make_unique<Survivor>(Players::Player1, sf::Vector2f(START_X, START_Y)));
+    this->players.push_back(std::make_unique<Survivor>(Players::Player2, sf::Vector2f(START_X, START_Y)));
+    this->players.push_back(std::make_unique<Survivor>(Players::Player3, sf::Vector2f(START_X, START_Y)));
 
 }
 
+void Game::initMap() {
+    this->map = std::make_unique<Map>(videoMode.width, videoMode.height);
+}
+
+
 void Game::initZombies() {
+
 }
 
 
@@ -68,6 +77,7 @@ void Game::drawZombies() {
 Game::Game() {
     this->initVariables();
     this->initWindow();
+    this->initMap();
     this->initPlayers();
 }
 
@@ -122,8 +132,10 @@ void Game::render() {
     this->app->clear();
 
     //Draw game here
-
+    //draw character and zombies
     this->app->draw(*this->background);
+    this->drawPlayers();
+    this->drawZombies();
 
 
     this->app->display();
@@ -139,6 +151,42 @@ void Game::run() {
 State Game::updateState() const {
     return state;
 }
+
+std::vector<Character> Game::getCharacters(sf::Vector2f position) {
+    std::vector<Character> characters;
+    for (auto &player: this->players) {
+        if (player->getPosition() == position) {
+            characters.push_back(*player);
+        }
+    }
+    for (auto &zombie: this->zombies) {
+        if (zombie->getPosition() == position) {
+            characters.push_back(*zombie);
+        }
+    }
+    return characters;
+}
+
+bool Game::isLegalMove(Character ct, sf::Vector2f position) {
+    //check if the position is Street or Room
+    if (this->map->getSpace(position) != Space::Street && this->map->getSpace(position) != Space::Room) {
+        return false;
+    }
+    //check if the position is in the map
+    if (!this->map->existSpace(position)) {
+        return false;
+    }
+    //check if the position is not next to the character
+    //TODO
+
+
+    //check if the position is not the same as the character
+    if (ct.getPosition() == position) {
+        return false;
+    }
+
+}
+
 
 
 
