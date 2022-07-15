@@ -7,7 +7,8 @@
 
 
 class Card {
-
+public:
+    virtual void use() = 0;
 };
 
 

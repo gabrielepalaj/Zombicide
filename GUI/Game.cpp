@@ -4,9 +4,6 @@
 
 #include "Game.h"
 
-#include <memory>
-#include "../Classes/Survivor.h"
-#include "../Classes/Map.h"
 
 
 //private methods

@@ -4,7 +4,11 @@
 
 #ifndef ZOMBICIDE_DECK_H
 #define ZOMBICIDE_DECK_H
+
 #include "Card.h"
+#include <vector>
+#include <memory>
+#include <iostream>
 
 
 class Deck {
@@ -13,8 +17,7 @@ class Deck {
     void add();
 
 private:
-    Card card[10];
-
+    std::vector<std::unique_ptr<Card>> cards;
 };
 
 

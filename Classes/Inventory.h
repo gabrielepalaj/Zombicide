@@ -8,6 +8,8 @@
 #include "Card.h"
 #include <vector>
 #include <memory>
+#include "Weapon.h"
+#include <iostream>
 
 
 class Inventory {

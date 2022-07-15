@@ -6,10 +6,12 @@
 #include <SFML/System.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Network.hpp>
-#include <iostream>
 #include "Menu.h"
 #include "../Classes/Character.h"
 #include "../Classes/Map.h"
+#include "../Classes/Survivor.h"
+#include <memory>
+#include <iostream>
 
 #ifndef ZOMBICIDE_GAME_H
 #define ZOMBICIDE_GAME_H

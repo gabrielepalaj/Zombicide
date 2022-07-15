@@ -7,9 +7,11 @@
 #include "Card.h"
 
 class Weapon : public Card {
-    void use();
 
+public:
     bool canOpenDoor() const;
+
+    void use();
 
 protected:
     int damage;
