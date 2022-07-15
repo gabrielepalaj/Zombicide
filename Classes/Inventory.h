@@ -7,22 +7,23 @@
 
 #include "Card.h"
 #include <vector>
+#include <iostream>
 #include <memory>
 #include "Weapon.h"
-#include <iostream>
 
 
 class Inventory {
 public:
 
-    void addCard();
+    bool addCard(Card *card);
 
-    void remove();
+    bool remove(int n);
 
     bool canOpenDoor();
 
 private:
-    std::vector<std::unique_ptr<Card>> cards;
+    const int maxCards = 5;
+    std::vector<Card *> cards;
 };
 
 
