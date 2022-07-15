@@ -8,7 +8,7 @@
 
 class Card {
 public:
-    virtual void use() = 0;
+    virtual bool use() = 0;
 };
 
 

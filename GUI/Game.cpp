@@ -179,6 +179,7 @@ bool Game::isLegalMove(Character ct, sf::Vector2f position) {
     if (ct.getPosition() == position) {
         return false;
     }
+    return true;
 
 }
 

@@ -5,14 +5,18 @@
 #ifndef ZOMBICIDE_SPAWNZOMBIE_H
 #define ZOMBICIDE_SPAWNZOMBIE_H
 
+#include <vector>
 #include "Card.h"
 
+enum class SpawnLevel {
+    EASY, MEDIUM, HARD
+};
 
 class SpawnZombie : Card {
     void spawn();
 
 private:
-    //SpawnLevel level[3]; //0 = easy, 1 = medium, 2 = hard
+    std::vector<SpawnLevel> spawnLevels;
 
 };
 

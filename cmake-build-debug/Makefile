@@ -249,54 +249,6 @@ Classes/Map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Map.cpp.s
 .PHONY : Classes/Map.cpp.s
 
-Classes/Melee.o: Classes/Melee.cpp.o
-.PHONY : Classes/Melee.o
-
-# target to build an object file
-Classes/Melee.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Melee.cpp.o
-.PHONY : Classes/Melee.cpp.o
-
-Classes/Melee.i: Classes/Melee.cpp.i
-.PHONY : Classes/Melee.i
-
-# target to preprocess a source file
-Classes/Melee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Melee.cpp.i
-.PHONY : Classes/Melee.cpp.i
-
-Classes/Melee.s: Classes/Melee.cpp.s
-.PHONY : Classes/Melee.s
-
-# target to generate assembly for a file
-Classes/Melee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Melee.cpp.s
-.PHONY : Classes/Melee.cpp.s
-
-Classes/Ranged.o: Classes/Ranged.cpp.o
-.PHONY : Classes/Ranged.o
-
-# target to build an object file
-Classes/Ranged.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.o
-.PHONY : Classes/Ranged.cpp.o
-
-Classes/Ranged.i: Classes/Ranged.cpp.i
-.PHONY : Classes/Ranged.i
-
-# target to preprocess a source file
-Classes/Ranged.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.i
-.PHONY : Classes/Ranged.cpp.i
-
-Classes/Ranged.s: Classes/Ranged.cpp.s
-.PHONY : Classes/Ranged.s
-
-# target to generate assembly for a file
-Classes/Ranged.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Zombicide.dir/build.make CMakeFiles/Zombicide.dir/Classes/Ranged.cpp.s
-.PHONY : Classes/Ranged.cpp.s
-
 Classes/SpawnZombie.o: Classes/SpawnZombie.cpp.o
 .PHONY : Classes/SpawnZombie.o
 
@@ -489,12 +441,6 @@ help:
 	@echo "... Classes/Map.o"
 	@echo "... Classes/Map.i"
 	@echo "... Classes/Map.s"
-	@echo "... Classes/Melee.o"
-	@echo "... Classes/Melee.i"
-	@echo "... Classes/Melee.s"
-	@echo "... Classes/Ranged.o"
-	@echo "... Classes/Ranged.i"
-	@echo "... Classes/Ranged.s"
 	@echo "... Classes/SpawnZombie.o"
 	@echo "... Classes/SpawnZombie.i"
 	@echo "... Classes/SpawnZombie.s"
