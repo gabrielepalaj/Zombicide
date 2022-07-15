@@ -6,16 +6,12 @@
 
 
 Character::Character(sf::Vector2f position) {
-    this->posX = position.x;
-    this->posY = position.y;
-    this->setPosition(sf::Vector2f(this->posX * SCALE, this->posY * SCALE));
-
+    move(position);
 }
 
 void Character::move(sf::Vector2f position) {
-    this->posX = position.x;
-    this->posY = position.y;
-    this->setPosition(sf::Vector2f(this->posX * SCALE, this->posY * SCALE));
+    this->position = position;
+    this->adjustPosition();
 }
 
 
@@ -29,6 +25,10 @@ int Character::takeDamage() {
 
 Character::~Character() {
 
+}
+
+void Character::adjustPosition() {
+    this->setPosition(this->position.x * SCALE, this->position.y * SCALE);
 }
 
 

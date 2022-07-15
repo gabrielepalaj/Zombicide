@@ -7,6 +7,7 @@
 
 #include "Character.h"
 #include "Inventory.h"
+#include "Deck.h"
 #include <iostream>
 #include <memory>
 #include <SFML/Graphics/Texture.hpp>
@@ -23,9 +24,9 @@ public:
 
     ~Survivor() override;
 
-    void search();
+    void search(Deck deck);
 
-    void openDoor();
+    bool openDoor();
 
     void activate();
 

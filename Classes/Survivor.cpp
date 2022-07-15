@@ -20,12 +20,13 @@ Survivor::Survivor(Players player, sf::Vector2f position) : Character(position) 
 
 
 
-void Survivor::search() {
+void Survivor::search(Deck deck) {
+    //pesca una carta dal mazzo
 
 }
 
-void Survivor::openDoor() {
-
+bool Survivor::openDoor() {
+    return this->inventory->canOpenDoor();
 }
 
 void Survivor::activate() {

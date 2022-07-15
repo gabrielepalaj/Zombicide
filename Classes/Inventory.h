@@ -4,16 +4,23 @@
 
 #ifndef ZOMBICIDE_INVENTORY_H
 #define ZOMBICIDE_INVENTORY_H
+
 #include "Card.h"
+#include <vector>
+#include <memory>
 
 
 class Inventory {
+public:
+
     void addCard();
 
     void remove();
 
+    bool canOpenDoor();
+
 private:
-    Card cards[10];
+    std::vector<std::unique_ptr<Card>> cards;
 };
 
 

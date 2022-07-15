@@ -5,8 +5,6 @@
 #ifndef ZOMBICIDE_CHARACTER_H
 #define ZOMBICIDE_CHARACTER_H
 
-//scala di differenza tra la posizione nella mappa e la posizione in pixel
-#define SCALE 50
 
 #include <SFML/Graphics/Sprite.hpp>
 
@@ -25,11 +23,13 @@ public:
     virtual int takeDamage();
 
 protected:
+    const int SCALE = 50;
     int movement;
     int action;
     int hp;
-    float posX;
-    float posY;
+    sf::Vector2f position;
+
+    void adjustPosition();
 
 };
 

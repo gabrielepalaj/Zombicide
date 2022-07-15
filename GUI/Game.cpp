@@ -8,8 +8,6 @@
 #include "../Classes/Survivor.h"
 #include "../Classes/Map.h"
 
-#define START_X 1
-#define START_Y 1
 
 //private methods
 void Game::initVariables() {

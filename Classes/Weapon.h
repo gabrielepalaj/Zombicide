@@ -9,13 +9,16 @@
 class Weapon : public Card {
     void use();
 
+    bool canOpenDoor() const;
+
 protected:
     int damage;
     int range;
     int dice;
     int precision;
     bool noise;
-    bool doubleWeapon;
+    bool twoHanded;
+    bool openDoor;
 };
 
 

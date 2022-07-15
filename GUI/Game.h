@@ -57,6 +57,12 @@ private:
     bool isLegalMove(Character ct, sf::Vector2f position);
 
 public:
+
+    const static int START_X = 1;
+    const static int START_Y = 1;
+    const static int WIDTH;
+    const static int HEIGHT;
+
     //Costructors / destructors
     Game();
 

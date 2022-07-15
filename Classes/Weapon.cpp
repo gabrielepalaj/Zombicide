@@ -7,3 +7,7 @@
 void Weapon::use() {
 
 }
+
+bool Weapon::canOpenDoor() const {
+    return openDoor;
+}
