@@ -609,7 +609,7 @@ class DeathTestAndMultiThreadsTest : public testing::Test {
 // The MixedUpTestCaseTest test case verifies that Google Test will fail a
 // test if it uses a different fixture class than what other tests in
 // the same test case use.  It deliberately contains two fixture
-// classes with the same name but defined in different namespaces.
+// Classes with the same name but defined in different namespaces.
 
 // The MixedUpTestCaseWithSameTestNameTest test case verifies that
 // when the user defines two tests with the same test case name AND

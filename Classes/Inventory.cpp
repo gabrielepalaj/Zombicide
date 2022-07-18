@@ -13,10 +13,10 @@ bool Inventory::addCard(Card *card) {
 }
 
 
-bool Inventory::remove(int n) {
-    if (n < cards.size()) {
-        cards.erase(cards.begin() + n);
-        for (int i = n; i < cards.size(); i++) {
+bool Inventory::remove(int nCard) {
+    if (nCard < cards.size()) {
+        cards.erase(cards.begin() + nCard);
+        for (int i = nCard; i < cards.size(); i++) {
             cards[i] = cards[i + 1];
         }
         return true;
@@ -24,15 +24,36 @@ bool Inventory::remove(int n) {
     return false;
 }
 
-bool Inventory::canOpenDoor() {
-    Weapon *weapon;
-    for (auto &card: cards) {
-        weapon = dynamic_cast<Weapon *>(card);
-        if (weapon != nullptr && weapon->canOpenDoor()) {
+bool Inventory::canOpenDoor(int nCard) const{
+    if (nCard < cards.size()) {
+        auto *weapon = dynamic_cast<Weapon *>(cards[nCard]);
+        if (weapon != nullptr) {
+            return weapon->canOpenDoor();
+        }
+    }
+    return false;
+}
+
+bool Inventory::isWeapon(int nWeapon) {
+    if (nWeapon < cards.size()) {
+        auto *weapon = dynamic_cast<Weapon *>(cards[nWeapon]);
+        if (weapon != nullptr) {
             return true;
         }
     }
     return false;
 }
+
+std::unique_ptr<Weapon> Inventory::getWeapon(int nWeapon) {
+    if (nWeapon < cards.size()) {
+        auto *weapon = dynamic_cast<Weapon *>(cards[nWeapon]);
+        if (weapon != nullptr) {
+            return std::unique_ptr<Weapon>(weapon);
+        }
+    }
+    return nullptr;
+}
+
+
 
 

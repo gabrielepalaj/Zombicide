@@ -33,7 +33,7 @@ private:
     //Background
     std::unique_ptr<sf::Sprite> background;
     //Buttons
-    //create smart poinert to sprite buttons
+    //create smart pointer to sprite buttons
     std::unique_ptr<sf::Sprite> buttonPlay;
     std::unique_ptr<sf::Sprite> buttonExit;
     //sf::Sprite *buttonCredits;

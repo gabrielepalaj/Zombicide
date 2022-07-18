@@ -30,7 +30,7 @@
 //
 // Google Test filepath utilities
 //
-// This file tests classes and functions used internally by
+// This file tests Classes and functions used internally by
 // Google Test.  They are subject to change without notice.
 //
 // This file is #included from gtest-internal.h.

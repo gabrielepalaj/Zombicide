@@ -22,8 +22,10 @@ public:
     ~Zombie() override;
 
     int addMove();
+    int attack(Character &character, int nWeapon);
 
 private:
+    int addedMoves;
     Zombies zombie;
     std::unique_ptr<sf::Texture> texture;
 

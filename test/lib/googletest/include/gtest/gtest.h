@@ -65,7 +65,7 @@
 #include "gtest/gtest-test-part.h"
 #include "gtest/gtest-typed-test.h"
 
-// Depending on the platform, different string classes are available.
+// Depending on the platform, different string Classes are available.
 // On Linux, in addition to ::std::string, Google also makes use of
 // class ::string, which has the same interface as ::std::string, but
 // has a different implementation.
@@ -182,9 +182,9 @@ namespace testing {
 
     }  // namespace internal
 
-// The friend relationship of some of these classes is cyclic.
-// If we don't forward declare them the compiler might confuse the classes
-// in friendship clauses with same named classes on the scope.
+// The friend relationship of some of these Classes is cyclic.
+// If we don't forward declare them the compiler might confuse the Classes
+// in friendship clauses with same named Classes on the scope.
     class Test;
 
     class TestCase;
@@ -1354,7 +1354,7 @@ namespace testing {
             internal::UnitTestImpl* impl() { return impl_; }
             const internal::UnitTestImpl* impl() const { return impl_; }
 
-            // These classes and functions are friends as they need to access private
+            // These Classes and functions are friends as they need to access private
             // members of UnitTest.
             friend class ScopedTrace;
             friend class Test;
@@ -1881,7 +1881,7 @@ GTEST_API_ AssertionResult CmpHelper##op_name(\
     template<typename T>
     const T *WithParamInterface<T>::parameter_ = NULL;
 
-// Most value-parameterized classes can ignore the existence of
+// Most value-parameterized Classes can ignore the existence of
 // WithParamInterface, and can just inherit from ::testing::TestWithParam.
 
     template<typename T>

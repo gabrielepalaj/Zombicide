@@ -4941,7 +4941,7 @@ class CartesianProductGenerator10
 
 // INTERNAL IMPLEMENTATION - DO NOT USE IN USER CODE.
 //
-// Helper classes providing Combine() with polymorphic features. They allow
+// Helper Classes providing Combine() with polymorphic features. They allow
 // casting CartesianProductGeneratorN<T> to ParamGenerator<U> if T is
 // convertible to U.
 //

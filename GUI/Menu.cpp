@@ -21,7 +21,7 @@ void Menu::initWindow() {
     //set sprite background as background
     this->background = std::make_unique<sf::Sprite>();
     textureBackground = std::make_unique<sf::Texture>();
-    textureBackground->loadFromFile("../Resources/Images/Menu.png");
+    textureBackground->loadFromFile("../assets/images/Menu.png");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
 
@@ -48,8 +48,8 @@ void Menu::initButtons() {
     texturePlay = std::make_unique<sf::Texture>();
     textureExit = std::make_unique<sf::Texture>();
 
-    texturePlay->loadFromFile("../Resources/Images/Gioca.png");
-    textureExit->loadFromFile("../Resources/Images/Esci.png");
+    texturePlay->loadFromFile("../assets/images/Gioca.png");
+    textureExit->loadFromFile("../assets/images/Esci.png");
 
     //set texture for buttons
     this->buttonPlay->setTexture(*this->texturePlay);

@@ -18,9 +18,8 @@ public:
 
     virtual void move(sf::Vector2f position);
 
-    virtual int attack();
+    virtual int attack(Character &character, int nWeapon) = 0;
 
-    virtual int takeDamage();
 
 protected:
     const int SCALE = 50;

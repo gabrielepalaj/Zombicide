@@ -10,8 +10,6 @@
 class Weapon : public Card {
 
 public:
-    bool canOpenDoor() const;
-
     bool use();
 
     int getDamage() const;
@@ -26,7 +24,7 @@ public:
 
     bool isTwoHanded() const;
 
-    bool isOpenDoor() const;
+    bool canOpenDoor() const;
 
     bool isRanged() const;
 

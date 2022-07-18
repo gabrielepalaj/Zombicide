@@ -758,7 +758,7 @@ namespace std {
             return GTEST_10_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8, f9);
         }
 
-// 6.1.3.3 Tuple helper classes.
+// 6.1.3.3 Tuple helper Classes.
 
         template<typename Tuple>
         struct tuple_size;

@@ -20,7 +20,7 @@ void Game::initWindow() {
     //set sprite background as background
     this->background = std::make_unique<sf::Sprite>();
     this->textureBackground = std::make_unique<sf::Texture>();
-    textureBackground->loadFromFile("../Resources/Images/Game.png");
+    textureBackground->loadFromFile("../assets/images/Game.png");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
 
@@ -147,22 +147,23 @@ State Game::updateState() const {
     return state;
 }
 
-std::vector<Character> Game::getCharacters(sf::Vector2f position) {
-    std::vector<Character> characters;
+std::vector<Character*> Game::getCharacters(sf::Vector2f position) const{
+    std::vector<Character*> characters;
     for (auto &player: this->players) {
         if (player->getPosition() == position) {
-            characters.push_back(*player);
+            characters.push_back(player.get());
         }
     }
     for (auto &zombie: this->zombies) {
         if (zombie->getPosition() == position) {
-            characters.push_back(*zombie);
+            characters.push_back(zombie.get());
         }
     }
     return characters;
+
 }
 
-bool Game::isLegalMove(Character ct, sf::Vector2f position) {
+bool Game::isLegalMove(Character *ct, sf::Vector2f position) {
     //check if the position is Street or Room
     if (this->map->getSpace(position) != Space::Street && this->map->getSpace(position) != Space::Room) {
         return false;
@@ -176,7 +177,7 @@ bool Game::isLegalMove(Character ct, sf::Vector2f position) {
 
 
     //check if the position is not the same as the character
-    if (ct.getPosition() == position) {
+    if (ct->getPosition() == position) {
         return false;
     }
     return true;

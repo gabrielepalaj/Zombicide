@@ -491,7 +491,7 @@ namespace testing {
 // INTERNAL IMPLEMENTATION - DO NOT USE IN USER CODE.
 //
 // ParameterizedTestCaseInfoBase is a generic interface
-// to ParameterizedTestCaseInfo classes. ParameterizedTestCaseInfoBase
+// to ParameterizedTestCaseInfo Classes. ParameterizedTestCaseInfoBase
 // accumulates test information provided by TEST_P macro invocations
 // and generators provided by INSTANTIATE_TEST_CASE_P macro invocations
 // and uses that information to register all resulting test instances
@@ -704,7 +704,7 @@ namespace testing {
 // INTERNAL IMPLEMENTATION - DO NOT USE IN USER CODE.
 //
 // ParameterizedTestCaseRegistry contains a map of ParameterizedTestCaseInfoBase
-// classes accessed by test case names. TEST_P and INSTANTIATE_TEST_CASE_P
+// Classes accessed by test case names. TEST_P and INSTANTIATE_TEST_CASE_P
 // macros use it to locate their corresponding ParameterizedTestCaseInfo
 // descriptors.
         class ParameterizedTestCaseRegistry {

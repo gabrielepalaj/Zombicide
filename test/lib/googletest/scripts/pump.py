@@ -33,7 +33,7 @@
 
 A tool for preprocessor meta programming.  Useful for generating
 repetitive boilerplate code.  Especially useful for writing C++
-classes, functions, macros, and templates that need to work with
+Classes, functions, macros, and templates that need to work with
 various number of arguments.
 
 USAGE:

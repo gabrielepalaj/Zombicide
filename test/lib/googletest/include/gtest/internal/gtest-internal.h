@@ -128,7 +128,7 @@ namespace testing {
 // integral constant).
 #ifdef GTEST_ELLIPSIS_NEEDS_POD_
         // We lose support for NULL detection where the compiler doesn't like
-        // passing non-POD classes through ellipsis (...).
+        // passing non-POD Classes through ellipsis (...).
 # define GTEST_IS_NULL_LITERAL_(x) false
 #else
 # define GTEST_IS_NULL_LITERAL_(x) \
@@ -421,8 +421,8 @@ namespace testing {
         typedef FloatingPoint<double> Double;
 
 // In order to catch the mistake of putting tests that use different
-// test fixture classes in the same test case, we need to assign
-// unique IDs to fixture classes and compare them.  The TypeId type is
+// test fixture Classes in the same test case, we need to assign
+// unique IDs to fixture Classes and compare them.  The TypeId type is
 // used to hold such IDs.  The user should treat TypeId as an opaque
 // type: the only operation allowed on TypeId values is to compare
 // them for equality using the == operator.

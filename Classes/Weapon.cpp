@@ -5,9 +5,6 @@
 #include "Weapon.h"
 
 
-bool Weapon::canOpenDoor() const {
-    return openDoor;
-}
 
 int Weapon::getDamage() const {
     return damage;
@@ -33,7 +30,7 @@ bool Weapon::isTwoHanded() const {
     return twoHanded;
 }
 
-bool Weapon::isOpenDoor() const {
+bool Weapon::canOpenDoor() const {
     return openDoor;
 }
 

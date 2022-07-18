@@ -2320,7 +2320,7 @@ AssertionResult IsHRESULTFailure(const char* expr, long hr) {  // NOLINT
                         << "want to change the TEST to TEST_F or move it to another test\n"
                         << "case.";
             } else {
-                // Two fixture classes with the same name appear in two different
+                // Two fixture Classes with the same name appear in two different
                 // namespaces, which is not allowed. Tell the user how to fix this.
                 ADD_FAILURE()
                         << "All tests in the same test case must use the same test fixture\n"
@@ -2328,10 +2328,10 @@ AssertionResult IsHRESULTFailure(const char* expr, long hr) {  // NOLINT
                         << this_test_info->test_case_name() << ",\n"
                         << "you defined test " << first_test_name
                         << " and test " << this_test_name << "\n"
-                        << "using two different test fixture classes.  This can happen if\n"
-                        << "the two classes are from different namespaces or translation\n"
+                        << "using two different test fixture Classes.  This can happen if\n"
+                        << "the two Classes are from different namespaces or translation\n"
                         << "units and have the same name.  You should probably rename one\n"
-                        << "of the classes to put the tests into different test cases.";
+                        << "of the Classes to put the tests into different test cases.";
             }
             return false;
         }
@@ -2579,9 +2579,9 @@ GoogleTestFailureException::GoogleTestFailureException(
                     << "All tests in the same test case must use the same test fixture\n"
                     << "class.  However, in test case " << test_case_name << ", you tried\n"
                     << "to define a test using a fixture class different from the one\n"
-                    << "used earlier. This can happen if the two fixture classes are\n"
+                    << "used earlier. This can happen if the two fixture Classes are\n"
                     << "from different namespaces and have the same name. You should\n"
-                    << "probably rename one of the classes to put the tests into different\n"
+                    << "probably rename one of the Classes to put the tests into different\n"
                     << "test cases.";
 
             GTEST_LOG_(ERROR) << FormatFileLocation(code_location.file.c_str(),

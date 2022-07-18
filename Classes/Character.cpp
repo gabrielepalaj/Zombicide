@@ -15,14 +15,6 @@ void Character::move(sf::Vector2f position) {
 }
 
 
-int Character::attack() {
-    return 0;
-}
-
-int Character::takeDamage() {
-    return 0;
-}
-
 Character::~Character() {
 
 }

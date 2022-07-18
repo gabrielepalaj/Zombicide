@@ -8,7 +8,7 @@ Survivor::Survivor(Players player, sf::Vector2f position) : Character(position) 
     this->player = player;
     this->inventory = std::make_unique<Inventory>();
     this->texture = std::make_unique<sf::Texture>();
-    this->texture->loadFromFile("../Resources/Images/provaCT.jpg");
+    this->texture->loadFromFile("../assets/images/provaCT.jpg");
     this->setTexture(*this->texture);
     //set scale 1/20 of the window size
     this->setScale(0.03, 0.03);
@@ -25,8 +25,8 @@ void Survivor::search(Deck deck) {
 
 }
 
-bool Survivor::openDoor() {
-    return this->inventory->canOpenDoor();
+bool Survivor::openDoor(int nCard) const{
+    return this->inventory->canOpenDoor(nCard);
 }
 
 void Survivor::activate() {
@@ -39,6 +39,13 @@ void Survivor::makeNoise() {
 
 Survivor::~Survivor() {
 
+}
+
+int Survivor::attack(Character &character, int nWeapon) {
+    int damage = 0;
+    if(inventory->isWeapon(nWeapon)) {
+        damage = inventory->getWeapon(nWeapon)->getDamage();
+    }
 }
 
 

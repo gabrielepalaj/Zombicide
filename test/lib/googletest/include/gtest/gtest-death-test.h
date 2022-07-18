@@ -184,7 +184,7 @@ namespace testing {
 # define EXPECT_DEATH(statement, regex) \
     EXPECT_EXIT(statement, ::testing::internal::ExitedUnsuccessfully, regex)
 
-    // Two predicate classes that can be used in {ASSERT,EXPECT}_EXIT*:
+    // Two predicate Classes that can be used in {ASSERT,EXPECT}_EXIT*:
 
     // Tests that an exit code describes a normal exit with a given exit code.
     class GTEST_API_ ExitedWithCode {

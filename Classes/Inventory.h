@@ -17,9 +17,13 @@ public:
 
     bool addCard(Card *card);
 
-    bool remove(int n);
+    bool remove(int nCard);
 
-    bool canOpenDoor();
+    bool isWeapon(int nWeapon);
+
+    std::unique_ptr<Weapon> getWeapon(int nWeapon);
+
+    bool canOpenDoor(int nCard) const;
 
 private:
     const int maxCards = 5;

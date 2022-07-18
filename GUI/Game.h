@@ -54,9 +54,9 @@ private:
 
     void drawZombies();
 
-    std::vector<Character> getCharacters(sf::Vector2f position);
+    std::vector<Character*> getCharacters(sf::Vector2f position) const;
 
-    bool isLegalMove(Character ct, sf::Vector2f position);
+    bool isLegalMove(Character* ct, sf::Vector2f position);
 
 public:
 

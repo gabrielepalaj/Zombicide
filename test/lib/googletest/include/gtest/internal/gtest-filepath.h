@@ -30,7 +30,7 @@
 //
 // Google Test filepath utilities
 //
-// This header file declares classes and functions used internally by
+// This header file declares Classes and functions used internally by
 // Google Test.  They are subject to change without notice.
 //
 // This file is #included in gtest/internal/gtest-internal.h.

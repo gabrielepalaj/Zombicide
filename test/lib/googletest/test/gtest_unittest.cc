@@ -2563,7 +2563,7 @@ EXPECT_GE(num_tests_on_shard, num_tests
 }
 
 // For the same reason we are not explicitly testing everything in the
-// Test class, there are no separate tests for the following classes
+// Test class, there are no separate tests for the following Classes
 // (except for some trivial cases):
 //
 //   TestCase, UnitTest, UnitTestResultPrinter.
@@ -3643,7 +3643,7 @@ EXPECT_FATAL_FAILURE(ASSERT_FLOAT_EQ(0.0, 1.5),
 // small.
 TEST_F(FloatTest, AlmostZeros
 ) {
-// In C++Builder, names within local classes (such as used by
+// In C++Builder, names within local Classes (such as used by
 // EXPECT_FATAL_FAILURE) cannot be resolved against static members of the
 // scoping class.  Use a static local alias as a workaround.
 // We use the assignment syntax since some compilers, like Sun Studio,
@@ -3705,7 +3705,7 @@ TEST_F(FloatTest, NaN
 #if !GTEST_OS_SYMBIAN
 // Nokia's STLport crashes if we try to output infinity or NaN.
 
-// In C++Builder, names within local classes (such as used by
+// In C++Builder, names within local Classes (such as used by
 // EXPECT_FATAL_FAILURE) cannot be resolved against static members of the
 // scoping class.  Use a static local alias as a workaround.
 // We use the assignment syntax since some compilers, like Sun Studio,
@@ -3842,7 +3842,7 @@ EXPECT_FATAL_FAILURE(ASSERT_DOUBLE_EQ(0.0, 1.0),
 // small.
 TEST_F(DoubleTest, AlmostZeros
 ) {
-// In C++Builder, names within local classes (such as used by
+// In C++Builder, names within local Classes (such as used by
 // EXPECT_FATAL_FAILURE) cannot be resolved against static members of the
 // scoping class.  Use a static local alias as a workaround.
 // We use the assignment syntax since some compilers, like Sun Studio,
@@ -3902,7 +3902,7 @@ EXPECT_NONFATAL_FAILURE(EXPECT_DOUBLE_EQ(values_.infinity, values_.nan1),
 TEST_F(DoubleTest, NaN
 ) {
 #if !GTEST_OS_SYMBIAN
-// In C++Builder, names within local classes (such as used by
+// In C++Builder, names within local Classes (such as used by
 // EXPECT_FATAL_FAILURE) cannot be resolved against static members of the
 // scoping class.  Use a static local alias as a workaround.
 // We use the assignment syntax since some compilers, like Sun Studio,
@@ -4151,13 +4151,13 @@ class SingleEvaluationTest : public Test {
 public:  // Must be public and not protected due to a bug in g++ 3.4.2.
     // This helper function is needed by the FailedASSERT_STREQ test
     // below.  It's public to work around C++Builder's bug with scoping local
-    // classes.
+    // Classes.
     static void CompareAndIncrementCharPtrs() {
         ASSERT_STREQ(p1_++, p2_++);
     }
 
     // This helper function is needed by the FailedASSERT_NE test below.  It's
-    // public to work around C++Builder's bug with scoping local classes.
+    // public to work around C++Builder's bug with scoping local Classes.
     static void CompareAndIncrementInts() {
         ASSERT_NE(a_++, b_++);
     }

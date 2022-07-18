@@ -26,11 +26,13 @@ public:
 
     void search(Deck deck);
 
-    bool openDoor();
+    bool openDoor(int nCard) const;
 
     void activate();
 
     void makeNoise();
+
+    int attack(Character &character, int nWeapon) override;
 
 private :
     Players player;

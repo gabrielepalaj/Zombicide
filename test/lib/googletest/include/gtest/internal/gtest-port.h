@@ -1747,7 +1747,7 @@ namespace testing {
         //   ThreadWithParam<int> thread(&ThreadFunc, 5, &thread_can_start);
         //   thread_can_start.Notify();
         //
-        // These classes are only for testing Google Test's own constructs. Do
+        // These Classes are only for testing Google Test's own constructs. Do
         // not use them in user tests, either directly or indirectly.
         template <typename T>
         class ThreadWithParam : public ThreadWithParamBase {
@@ -2343,7 +2343,7 @@ namespace testing {
 // we cannot detect it.
         GTEST_API_ size_t GetThreadCount();
 
-// Passing non-POD classes through ellipsis (...) crashes the ARM
+// Passing non-POD Classes through ellipsis (...) crashes the ARM
 // compiler and generates a warning in Sun Studio before 12u4. The Nokia Symbian
 // and the IBM XL C/C++ compiler try to instantiate a copy constructor
 // for objects passed through ellipsis (...), failing for uncopyable
@@ -2352,7 +2352,7 @@ namespace testing {
 #if defined(__SYMBIAN32__) || defined(__IBMCPP__) || \
      (defined(__SUNPRO_CC) && __SUNPRO_CC < 0x5130)
         // We lose support for NULL detection where the compiler doesn't like
-        // passing non-POD classes through ellipsis (...).
+        // passing non-POD Classes through ellipsis (...).
 # define GTEST_ELLIPSIS_NEEDS_POD_ 1
 #else
 # define GTEST_CAN_COMPARE_NULL 1
