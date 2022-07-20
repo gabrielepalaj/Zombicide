@@ -61,7 +61,7 @@ void Menu::initButtons() {
                          this->app->getSize().y / 2 - this->buttonPlay->getGlobalBounds().height / 2 + 50));
     this->buttonExit->setPosition(
             sf::Vector2f(this->app->getSize().x / 2 - this->buttonExit->getGlobalBounds().width / 2,
-                         this->app->getSize().y / 2 + this->buttonExit->getGlobalBounds().height / 2 + 50));
+                         this->app->getSize().y / 2 + this->buttonExit->getGlobalBounds().height / 2 + 150));
 
     //set scale relative to the window, the buttons are 0.2 of the window size
     this->buttonPlay->setScale(sf::Vector2f(this->videoMode.width / this->buttonPlay->getGlobalBounds().width * 0.3,

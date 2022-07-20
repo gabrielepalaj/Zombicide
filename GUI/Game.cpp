@@ -14,13 +14,13 @@ void Game::initVariables() {
 
 void Game::initWindow() {
     //init height and width 1/3 of the screen
-    this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.7);
+    this->videoMode.height = (int) (sf::VideoMode::getDesktopMode().height * 0.75);
     this->videoMode.width = (int) (sf::VideoMode::getDesktopMode().width * 0.7);
 
     //set sprite background as background
     this->background = std::make_unique<sf::Sprite>();
     this->textureBackground = std::make_unique<sf::Texture>();
-    textureBackground->loadFromFile("../assets/images/Game.png");
+    textureBackground->loadFromFile("../assets/images/Mappa.jpg");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
 

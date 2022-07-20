@@ -1,4 +1,3 @@
 CMakeFiles/ZombicideLib.dir/Classes/Card.cpp.o: \
- /home/gabriele/CLionProjects/Zombicide/Classes/Card.cpp \
- /usr/include/stdc-predef.h \
- /home/gabriele/CLionProjects/Zombicide/Classes/Card.h
+  /Users/nikcinigiani/Documents/progetto/Zombicide/Classes/Card.cpp \
+  /Users/nikcinigiani/Documents/progetto/Zombicide/Classes/Card.h
