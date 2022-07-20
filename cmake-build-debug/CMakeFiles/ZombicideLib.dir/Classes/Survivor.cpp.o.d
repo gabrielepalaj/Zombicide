@@ -1,8 +1,8 @@
 CMakeFiles/ZombicideLib.dir/Classes/Survivor.cpp.o: \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Survivor.cpp \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Survivor.cpp \
  /usr/include/stdc-predef.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Survivor.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Character.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Survivor.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Character.h \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Drawable.hpp \
@@ -113,8 +113,8 @@ CMakeFiles/ZombicideLib.dir/Classes/Survivor.cpp.o: \
  /usr/include/SFML/Graphics/Transformable.hpp \
  /usr/include/SFML/Graphics/Vertex.hpp \
  /usr/include/SFML/Graphics/Color.hpp \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Inventory.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Card.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Inventory.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Card.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \
@@ -198,8 +198,8 @@ CMakeFiles/ZombicideLib.dir/Classes/Survivor.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Weapon.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Deck.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Weapon.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Deck.h \
  /usr/include/SFML/Graphics/Texture.hpp \
  /usr/include/SFML/Graphics/Image.hpp \
  /usr/include/SFML/Window/GlResource.hpp \

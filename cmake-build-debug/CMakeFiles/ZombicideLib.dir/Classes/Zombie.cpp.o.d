@@ -1,8 +1,8 @@
 CMakeFiles/ZombicideLib.dir/Classes/Zombie.cpp.o: \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Zombie.cpp \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Zombie.cpp \
  /usr/include/stdc-predef.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Zombie.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Character.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Zombie.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Character.h \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Drawable.hpp \

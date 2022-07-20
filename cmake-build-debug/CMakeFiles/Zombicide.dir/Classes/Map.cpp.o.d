@@ -1,7 +1,7 @@
 CMakeFiles/Zombicide.dir/Classes/Map.cpp.o: \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Map.cpp \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Map.cpp \
  /usr/include/stdc-predef.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Map.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Map.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -170,7 +170,7 @@ CMakeFiles/Zombicide.dir/Classes/Map.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Character.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Character.h \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Drawable.hpp \

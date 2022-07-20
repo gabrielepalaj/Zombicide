@@ -63,7 +63,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Zombicide.dir/DependInfo.cmake"
   "CMakeFiles/ZombicideExe.dir/DependInfo.cmake"
   "CMakeFiles/ZombicideLib.dir/DependInfo.cmake"
-  "test/CMakeFiles/runGameCharacterTests.dir/DependInfo.cmake"
+  "test/CMakeFiles/runCharacterTests.dir/DependInfo.cmake"
   "test/lib/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest -isystem /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest/include
+CXX_INCLUDES = -I/home/gabriele/CLionProjects/Zombicide/test/lib/googletest -isystem /home/gabriele/CLionProjects/Zombicide/test/lib/googletest/include
 
 CXX_FLAGS =  -std=c++17 -g -std=gnu++17
 

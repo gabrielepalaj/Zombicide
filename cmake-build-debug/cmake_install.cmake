@@ -1,4 +1,4 @@
-# Install script for directory: /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide
+# Install script for directory: /home/gabriele/CLionProjects/Zombicide
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/cmake_install.cmake")
+  include("/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

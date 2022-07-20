@@ -1,7 +1,7 @@
 CMakeFiles/Zombicide.dir/main.cpp.o: \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/main.cpp \
+ /home/gabriele/CLionProjects/Zombicide/main.cpp \
  /usr/include/stdc-predef.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Game.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/Game.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -269,10 +269,10 @@ CMakeFiles/Zombicide.dir/main.cpp.o: \
  /usr/include/SFML/Network/SocketSelector.hpp \
  /usr/include/SFML/Network/TcpListener.hpp \
  /usr/include/SFML/Network/UdpSocket.hpp \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Menu.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/Menu.h \
  /usr/include/c++/11/iostream \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Character.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Map.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Character.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Map.h \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -285,10 +285,10 @@ CMakeFiles/Zombicide.dir/main.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Character.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Survivor.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Inventory.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Card.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Weapon.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/../Classes/Deck.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/GUI/Menu.h
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Character.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Survivor.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Inventory.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Card.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Weapon.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/../Classes/Deck.h \
+ /home/gabriele/CLionProjects/Zombicide/GUI/Menu.h

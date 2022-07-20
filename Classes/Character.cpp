@@ -4,9 +4,12 @@
 
 #include "Character.h"
 
-
 Character::Character(sf::Vector2f position) {
     move(position);
+}
+
+Character::~Character() {
+
 }
 
 void Character::move(sf::Vector2f position) {
@@ -14,14 +17,11 @@ void Character::move(sf::Vector2f position) {
     this->adjustPosition();
 }
 
-
-Character::~Character() {
-
-}
-
 void Character::adjustPosition() {
     this->setPosition(this->position.x * SCALE, this->position.y * SCALE);
 }
+
+
 
 
 

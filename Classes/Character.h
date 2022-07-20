@@ -8,6 +8,7 @@
 
 #include <SFML/Graphics/Sprite.hpp>
 
+
 class Character : public sf::Sprite {
 
 public:

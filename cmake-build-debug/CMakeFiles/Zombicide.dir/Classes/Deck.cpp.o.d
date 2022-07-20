@@ -1,8 +1,8 @@
 CMakeFiles/Zombicide.dir/Classes/Deck.cpp.o: \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Deck.cpp \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Deck.cpp \
  /usr/include/stdc-predef.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Deck.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Card.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Deck.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Card.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

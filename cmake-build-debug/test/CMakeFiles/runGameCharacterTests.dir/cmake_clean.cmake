@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o"
+  "CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o.d"
   "CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o"
   "CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o.d"
   "runGameCharacterTests"

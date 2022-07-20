@@ -1,8 +1,8 @@
 CMakeFiles/ZombicideLib.dir/Classes/Weapon.cpp.o: \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Weapon.cpp \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Weapon.cpp \
  /usr/include/stdc-predef.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Weapon.h \
- /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/Classes/Card.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Weapon.h \
+ /home/gabriele/CLionProjects/Zombicide/Classes/Card.h \
  /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

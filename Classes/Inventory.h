@@ -21,9 +21,9 @@ public:
 
     bool isWeapon(int nWeapon);
 
-    std::unique_ptr<Weapon> getWeapon(int nWeapon);
+    Weapon *getWeapon(int nWeapon) const;
 
-    bool canOpenDoor(int nCard) const;
+    //bool canOpenDoor(int nCard) const;
 
 private:
     const int maxCards = 5;

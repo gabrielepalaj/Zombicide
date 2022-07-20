@@ -1,4 +1,4 @@
-# Install script for directory: /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test
+# Install script for directory: /home/gabriele/CLionProjects/Zombicide/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest/cmake_install.cmake")
+  include("/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest/cmake_install.cmake")
 
 endif()
 

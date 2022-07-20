@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/main.cpp" "CMakeFiles/ZombicideExe.dir/main.cpp.o" "gcc" "CMakeFiles/ZombicideExe.dir/main.cpp.o.d"
+  "/home/gabriele/CLionProjects/Zombicide/main.cpp" "CMakeFiles/ZombicideExe.dir/main.cpp.o" "gcc" "CMakeFiles/ZombicideExe.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

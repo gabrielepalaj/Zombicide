@@ -57,10 +57,10 @@ RM = /snap/clion/198/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide
+CMAKE_SOURCE_DIR = /home/gabriele/CLionProjects/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/CLionProjects/Zombicide/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/CLionProjects/Zombicide/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -156,17 +156,17 @@ ZombicideLib/fast:
 .PHONY : ZombicideLib/fast
 
 #=============================================================================
-# Target rules for targets named runGameCharacterTests
+# Target rules for targets named runCharacterTests
 
 # Build rule for target.
-runGameCharacterTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runGameCharacterTests
-.PHONY : runGameCharacterTests
+runCharacterTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runCharacterTests
+.PHONY : runCharacterTests
 
 # fast build rule for target.
-runGameCharacterTests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runGameCharacterTests.dir/build.make test/CMakeFiles/runGameCharacterTests.dir/build
-.PHONY : runGameCharacterTests/fast
+runCharacterTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/build
+.PHONY : runCharacterTests/fast
 
 #=============================================================================
 # Target rules for targets named gtest
@@ -525,7 +525,7 @@ help:
 	@echo "... ZombicideLib"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... runGameCharacterTests"
+	@echo "... runCharacterTests"
 	@echo "... Classes/Card.o"
 	@echo "... Classes/Card.i"
 	@echo "... Classes/Card.s"

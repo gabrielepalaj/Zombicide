@@ -28,18 +28,20 @@ public:
 
     bool openDoor(int nCard) const;
 
-    void activate();
-
     void makeNoise();
 
+    void removeNoise();
+
     int attack(Character &character, int nWeapon) override;
+
+    bool isNoise() const;
 
 private :
     Players player;
     std::unique_ptr<Inventory> inventory;
     std::unique_ptr<sf::Texture> texture;
-    int nPlayer;
     int exp;
+    int nPLayer;
 
     bool noise;
 

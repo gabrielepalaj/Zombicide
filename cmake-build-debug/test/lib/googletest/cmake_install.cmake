@@ -1,4 +1,4 @@
-# Install script for directory: /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest
+# Install script for directory: /home/gabriele/CLionProjects/Zombicide/test/lib/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

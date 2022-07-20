@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++17 -g CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o -o runGameCharacterTests  lib/googletest/libgtestd.a lib/googletest/libgtest_maind.a -lcore lib/googletest/libgtestd.a 
+/usr/bin/c++  -std=c++17 -g CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o -o runGameCharacterTests  lib/googletest/libgtestd.a lib/googletest/libgtest_maind.a -lcore lib/googletest/libgtestd.a 

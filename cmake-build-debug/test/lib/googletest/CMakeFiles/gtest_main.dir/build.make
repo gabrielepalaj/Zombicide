@@ -53,10 +53,10 @@ RM = /snap/clion/198/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide
+CMAKE_SOURCE_DIR = /home/gabriele/CLionProjects/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/CLionProjects/Zombicide/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include test/lib/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -72,16 +72,16 @@ include test/lib/googletest/CMakeFiles/gtest_main.dir/flags.make
 test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: test/lib/googletest/CMakeFiles/gtest_main.dir/flags.make
 test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: ../test/lib/googletest/src/gtest_main.cc
 test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: test/lib/googletest/CMakeFiles/gtest_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -MF CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest/src/gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -MF CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/gabriele/CLionProjects/Zombicide/test/lib/googletest/src/gtest_main.cc
 
 test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest/src/gtest_main.cc > CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/CLionProjects/Zombicide/test/lib/googletest/src/gtest_main.cc > CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 
 test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest/src/gtest_main.cc -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/CLionProjects/Zombicide/test/lib/googletest/src/gtest_main.cc -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -93,19 +93,19 @@ gtest_main_EXTERNAL_OBJECTS =
 test/lib/googletest/libgtest_maind.a: test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 test/lib/googletest/libgtest_maind.a: test/lib/googletest/CMakeFiles/gtest_main.dir/build.make
 test/lib/googletest/libgtest_maind.a: test/lib/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest_maind.a"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest_maind.a"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/lib/googletest/CMakeFiles/gtest_main.dir/build: test/lib/googletest/libgtest_maind.a
 .PHONY : test/lib/googletest/CMakeFiles/gtest_main.dir/build
 
 test/lib/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean.cmake
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean.cmake
 .PHONY : test/lib/googletest/CMakeFiles/gtest_main.dir/clean
 
 test/lib/googletest/CMakeFiles/gtest_main.dir/depend:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriele/CLionProjects/Zombicide /home/gabriele/CLionProjects/Zombicide/test/lib/googletest /home/gabriele/CLionProjects/Zombicide/cmake-build-debug /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/lib/googletest/CMakeFiles/gtest_main.dir/depend
 

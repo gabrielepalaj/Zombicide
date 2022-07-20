@@ -57,10 +57,10 @@ RM = /snap/clion/198/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide
+CMAKE_SOURCE_DIR = /home/gabriele/CLionProjects/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/CLionProjects/Zombicide/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test//CMakeFiles/progress.marks
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles 0
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test//CMakeFiles/progress.marks
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,39 +103,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/runGameCharacterTests.dir/rule:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runGameCharacterTests.dir/rule
-.PHONY : test/CMakeFiles/runGameCharacterTests.dir/rule
+test/CMakeFiles/runCharacterTests.dir/rule:
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runCharacterTests.dir/rule
+.PHONY : test/CMakeFiles/runCharacterTests.dir/rule
 
 # Convenience name for target.
-runGameCharacterTests: test/CMakeFiles/runGameCharacterTests.dir/rule
-.PHONY : runGameCharacterTests
+runCharacterTests: test/CMakeFiles/runCharacterTests.dir/rule
+.PHONY : runCharacterTests
 
 # fast build rule for target.
-runGameCharacterTests/fast:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runGameCharacterTests.dir/build.make test/CMakeFiles/runGameCharacterTests.dir/build
-.PHONY : runGameCharacterTests/fast
+runCharacterTests/fast:
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/build
+.PHONY : runCharacterTests/fast
 
 runAllTests.o: runAllTests.cpp.o
 .PHONY : runAllTests.o
 
 # target to build an object file
 runAllTests.cpp.o:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runGameCharacterTests.dir/build.make test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/runAllTests.cpp.o
 .PHONY : runAllTests.cpp.o
 
 runAllTests.i: runAllTests.cpp.i
@@ -143,7 +143,7 @@ runAllTests.i: runAllTests.cpp.i
 
 # target to preprocess a source file
 runAllTests.cpp.i:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runGameCharacterTests.dir/build.make test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.i
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/runAllTests.cpp.i
 .PHONY : runAllTests.cpp.i
 
 runAllTests.s: runAllTests.cpp.s
@@ -151,7 +151,7 @@ runAllTests.s: runAllTests.cpp.s
 
 # target to generate assembly for a file
 runAllTests.cpp.s:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runGameCharacterTests.dir/build.make test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.s
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/runAllTests.cpp.s
 .PHONY : runAllTests.cpp.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... runGameCharacterTests"
+	@echo "... runCharacterTests"
 	@echo "... runAllTests.o"
 	@echo "... runAllTests.i"
 	@echo "... runAllTests.s"
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

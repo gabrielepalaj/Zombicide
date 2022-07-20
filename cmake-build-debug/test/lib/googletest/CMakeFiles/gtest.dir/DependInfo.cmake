@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/lib/googletest/src/gtest-all.cc" "test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
+  "/home/gabriele/CLionProjects/Zombicide/test/lib/googletest/src/gtest-all.cc" "test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
   )
 
 # Targets to which this target links.

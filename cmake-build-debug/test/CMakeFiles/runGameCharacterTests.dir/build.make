@@ -53,10 +53,10 @@ RM = /snap/clion/198/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide
+CMAKE_SOURCE_DIR = /home/gabriele/CLionProjects/Zombicide
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gabriele/CLionProjects/Zombicide/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/runGameCharacterTests.dir/depend.make
@@ -72,42 +72,58 @@ include test/CMakeFiles/runGameCharacterTests.dir/flags.make
 test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o: test/CMakeFiles/runGameCharacterTests.dir/flags.make
 test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o: ../test/runAllTests.cpp
 test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o: test/CMakeFiles/runGameCharacterTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o -MF CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o.d -o CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o -c /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/runAllTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o -MF CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o.d -o CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o -c /home/gabriele/CLionProjects/Zombicide/test/runAllTests.cpp
 
 test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.i"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/runAllTests.cpp > CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.i
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/CLionProjects/Zombicide/test/runAllTests.cpp > CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.i
 
 test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.s"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test/runAllTests.cpp -o CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.s
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/CLionProjects/Zombicide/test/runAllTests.cpp -o CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.s
+
+test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o: test/CMakeFiles/runGameCharacterTests.dir/flags.make
+test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o: ../test/CharacterTests.cpp
+test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o: test/CMakeFiles/runGameCharacterTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o -MF CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o.d -o CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o -c /home/gabriele/CLionProjects/Zombicide/test/CharacterTests.cpp
+
+test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.i"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabriele/CLionProjects/Zombicide/test/CharacterTests.cpp > CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.i
+
+test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.s"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabriele/CLionProjects/Zombicide/test/CharacterTests.cpp -o CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.s
 
 # Object files for target runGameCharacterTests
 runGameCharacterTests_OBJECTS = \
-"CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o"
+"CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o" \
+"CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o"
 
 # External object files for target runGameCharacterTests
 runGameCharacterTests_EXTERNAL_OBJECTS =
 
 test/runGameCharacterTests: test/CMakeFiles/runGameCharacterTests.dir/runAllTests.cpp.o
+test/runGameCharacterTests: test/CMakeFiles/runGameCharacterTests.dir/CharacterTests.cpp.o
 test/runGameCharacterTests: test/CMakeFiles/runGameCharacterTests.dir/build.make
 test/runGameCharacterTests: test/lib/googletest/libgtestd.a
 test/runGameCharacterTests: test/lib/googletest/libgtest_maind.a
 test/runGameCharacterTests: test/lib/googletest/libgtestd.a
 test/runGameCharacterTests: test/CMakeFiles/runGameCharacterTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable runGameCharacterTests"
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runGameCharacterTests.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gabriele/CLionProjects/Zombicide/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable runGameCharacterTests"
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runGameCharacterTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/runGameCharacterTests.dir/build: test/runGameCharacterTests
 .PHONY : test/CMakeFiles/runGameCharacterTests.dir/build
 
 test/CMakeFiles/runGameCharacterTests.dir/clean:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/runGameCharacterTests.dir/cmake_clean.cmake
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/runGameCharacterTests.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/runGameCharacterTests.dir/clean
 
 test/CMakeFiles/runGameCharacterTests.dir/depend:
-	cd /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/test /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test /home/gabriele/Documents/Università/Programmazione/Progettone/Zombicide/cmake-build-debug/test/CMakeFiles/runGameCharacterTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gabriele/CLionProjects/Zombicide/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gabriele/CLionProjects/Zombicide /home/gabriele/CLionProjects/Zombicide/test /home/gabriele/CLionProjects/Zombicide/cmake-build-debug /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test /home/gabriele/CLionProjects/Zombicide/cmake-build-debug/test/CMakeFiles/runGameCharacterTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/runGameCharacterTests.dir/depend
 
