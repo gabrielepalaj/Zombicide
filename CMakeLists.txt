@@ -15,8 +15,8 @@ add_subdirectory(test)
 
 set(SOURCE_FILES Classes/Character.cpp Classes/Character.h Classes/Zombie.cpp Classes/Zombie.h Classes/Survivor.cpp Classes/Survivor.h Classes/Deck.cpp Classes/Deck.h Classes/Inventory.cpp Classes/Inventory.h Classes/Card.cpp Classes/Card.h Classes/Weapon.cpp Classes/Weapon.h Classes/SpawnZombie.cpp Classes/SpawnZombie.h Classes/Map.cpp Classes/Map.h)
 add_executable(ZombicideExe main.cpp)
-add_library(ZombicideLib ${SOURCE_FILES})
-target_link_libraries(Zombicide ZombicideLib)
+add_library(core ${SOURCE_FILES})
+target_link_libraries(Zombicide core)
 
 
 # Detect and add SFML - to read FindSFML.cmake file
