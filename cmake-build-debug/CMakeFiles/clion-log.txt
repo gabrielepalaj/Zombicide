@@ -8,6 +8,7 @@ CMake Deprecation Warning at test/lib/googletest/CMakeLists.txt:53 (cmake_minimu
 
 
 -- Found SFML 2.5.1 in /opt/homebrew/include
+-- Found SFML 2.5.1 in /opt/homebrew/include
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug

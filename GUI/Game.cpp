@@ -20,7 +20,7 @@ void Game::initWindow() {
     //set sprite background as background
     this->background = std::make_unique<sf::Sprite>();
     this->textureBackground = std::make_unique<sf::Texture>();
-    textureBackground->loadFromFile("../assets/images/Game.png");
+    textureBackground->loadFromFile("../assets/images/Mappa.jpg");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
 
@@ -39,9 +39,9 @@ void Game::initWindow() {
 
 void Game::initPlayers() {
 
-    this->players.push_back(std::make_unique<Survivor>(Players::Player1, sf::Vector2f(START_X, START_Y)));
-    this->players.push_back(std::make_unique<Survivor>(Players::Player2, sf::Vector2f(START_X, START_Y)));
-    this->players.push_back(std::make_unique<Survivor>(Players::Player3, sf::Vector2f(START_X, START_Y)));
+    this->players.push_back(std::make_unique<Survivor>(PlayerType::Player1, sf::Vector2f(START_X, START_Y)));
+    this->players.push_back(std::make_unique<Survivor>(PlayerType::Player2, sf::Vector2f(START_X, START_Y)));
+    this->players.push_back(std::make_unique<Survivor>(PlayerType::Player3, sf::Vector2f(START_X, START_Y)));
 
 }
 
@@ -164,19 +164,19 @@ std::vector<Character*> Game::getCharacters(sf::Vector2f position) const{
 }
 
 bool Game::isLegalMove(Character *ct, sf::Vector2f position) {
-    //check if the position is Street or Room
+    //check if the posMap is Street or Room
     if (this->map->getSpace(position) != Space::Street && this->map->getSpace(position) != Space::Room) {
         return false;
     }
-    //check if the position is in the map
+    //check if the posMap is in the map
     if (!this->map->existSpace(position)) {
         return false;
     }
-    //check if the position is not next to the character
+    //check if the posMap is not next to the character
     //TODO
 
 
-    //check if the position is not the same as the character
+    //check if the posMap is not the same as the character
     if (ct->getPosition() == position) {
         return false;
     }

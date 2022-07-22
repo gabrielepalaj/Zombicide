@@ -6,7 +6,7 @@
 
 Zombie::Zombie(sf::Vector2f position, ZombieType type) : Character(position) {
     this->type = type;
-    this->position = sf::Vector2f(0, 0);
+    this->posMap = sf::Vector2f(0, 0);
     init();
 }
 

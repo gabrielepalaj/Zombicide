@@ -7,7 +7,7 @@
 //  http://code.google.com/p/google-toolbox-for-mac/
 // 
 
-// Dynamic libs need to be position independent
+// Dynamic libs need to be posMap independent
 GCC_DYNAMIC_NO_PIC = NO
 
 // Dynamic libs should not have their external symbols stripped.

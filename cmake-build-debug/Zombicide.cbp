@@ -171,6 +171,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/nikcinigiani/Documents/progetto/Zombicide/test/lib/googletest"/>
+					<Add directory="/opt/homebrew/include"/>
 					<Add directory="/Users/nikcinigiani/Documents/progetto/Zombicide/test/lib/googletest/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
@@ -193,6 +194,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/nikcinigiani/Documents/progetto/Zombicide/test/lib/googletest"/>
+					<Add directory="/opt/homebrew/include"/>
 					<Add directory="/Users/nikcinigiani/Documents/progetto/Zombicide/test/lib/googletest/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
@@ -383,6 +385,9 @@
 		<Unit filename="/Users/nikcinigiani/Documents/progetto/Zombicide/main.cpp">
 			<Option target="ZombicideExe"/>
 			<Option target="Zombicide"/>
+		</Unit>
+		<Unit filename="/Users/nikcinigiani/Documents/progetto/Zombicide/test/SurvivorTests.cpp">
+			<Option target="runCharacterTests"/>
 		</Unit>
 		<Unit filename="/Users/nikcinigiani/Documents/progetto/Zombicide/test/lib/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>

@@ -7,7 +7,7 @@
 //  http://code.google.com/p/google-toolbox-for-mac/
 // 
 
-// Static libs can be included in bundles so make them position independent
+// Static libs can be included in bundles so make them posMap independent
 GCC_DYNAMIC_NO_PIC = NO
 
 // Static libs should not have their internal globals or external symbols

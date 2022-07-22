@@ -934,7 +934,7 @@ Have you read a
 
 ## I want to use Google Test with Visual Studio but don't know where to start. ##
 
-Many people are in your position and one of them posted his solution to our mailing list.
+Many people are in your posMap and one of them posted his solution to our mailing list.
 
 ## I am seeing compile errors mentioning std::type\_traits when I try to use Google Test on Solaris. ##
 

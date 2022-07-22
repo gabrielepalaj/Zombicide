@@ -17,6 +17,8 @@ public:
 
     ~Character() override;
 
+    const sf::Vector2f &getPosMap() const;
+
     virtual void move(sf::Vector2f position);
 
     virtual int attack(Character &character, int nWeapon) = 0;
@@ -27,7 +29,7 @@ protected:
     int movement;
     int action;
     int hp;
-    sf::Vector2f position;
+    sf::Vector2f posMap;
 
     void adjustPosition();
 

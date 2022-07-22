@@ -29,7 +29,7 @@ GCC_C_LANGUAGE_STANDARD = c99
 // not sure why apple defaults this on, but it's pretty risky
 ALWAYS_SEARCH_USER_PATHS = NO
 
-// Turn on position dependent code for most cases (overridden where appropriate)
+// Turn on posMap dependent code for most cases (overridden where appropriate)
 GCC_DYNAMIC_NO_PIC = YES
 
 // Default SDK and minimum OS version is 10.4

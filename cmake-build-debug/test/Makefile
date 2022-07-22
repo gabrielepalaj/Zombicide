@@ -130,6 +130,30 @@ runCharacterTests/fast:
 	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/build
 .PHONY : runCharacterTests/fast
 
+SurvivorTests.o: SurvivorTests.cpp.o
+.PHONY : SurvivorTests.o
+
+# target to build an object file
+SurvivorTests.cpp.o:
+	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/SurvivorTests.cpp.o
+.PHONY : SurvivorTests.cpp.o
+
+SurvivorTests.i: SurvivorTests.cpp.i
+.PHONY : SurvivorTests.i
+
+# target to preprocess a source file
+SurvivorTests.cpp.i:
+	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/SurvivorTests.cpp.i
+.PHONY : SurvivorTests.cpp.i
+
+SurvivorTests.s: SurvivorTests.cpp.s
+.PHONY : SurvivorTests.s
+
+# target to generate assembly for a file
+SurvivorTests.cpp.s:
+	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/SurvivorTests.cpp.s
+.PHONY : SurvivorTests.cpp.s
+
 runAllTests.o: runAllTests.cpp.o
 .PHONY : runAllTests.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runCharacterTests"
+	@echo "... SurvivorTests.o"
+	@echo "... SurvivorTests.i"
+	@echo "... SurvivorTests.s"
 	@echo "... runAllTests.o"
 	@echo "... runAllTests.i"
 	@echo "... runAllTests.s"

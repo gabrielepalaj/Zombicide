@@ -12,7 +12,7 @@
 #include <memory>
 #include <SFML/Graphics/Texture.hpp>
 
-enum class Players {
+enum class PlayerType {
     Player1, Player2, Player3
 };
 
@@ -20,7 +20,7 @@ enum class Players {
 class Survivor : public Character {
 public:
 
-    Survivor(Players player, sf::Vector2f position);
+    Survivor(PlayerType player, sf::Vector2f position);
 
     ~Survivor() override;
 
@@ -37,7 +37,7 @@ public:
     bool isNoise() const;
 
 private :
-    Players player;
+    PlayerType player;
     std::unique_ptr<Inventory> inventory;
     std::unique_ptr<sf::Texture> texture;
     int exp;

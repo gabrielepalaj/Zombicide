@@ -13,12 +13,16 @@ Character::~Character() {
 }
 
 void Character::move(sf::Vector2f position) {
-    this->position = position;
+    this->posMap = position;
     this->adjustPosition();
 }
 
 void Character::adjustPosition() {
-    this->setPosition(this->position.x * SCALE, this->position.y * SCALE);
+    this->setPosition(this->posMap.x * SCALE, this->posMap.y * SCALE);
+}
+
+const sf::Vector2f &Character::getPosMap() const {
+    return posMap;
 }
 
 

@@ -4,7 +4,7 @@
 
 #include "Survivor.h"
 
-Survivor::Survivor(Players player, sf::Vector2f position) : Character(position) {
+Survivor::Survivor(PlayerType player, sf::Vector2f position) : Character(position) {
     this->player = player;
     this->inventory = std::make_unique<Inventory>();
     this->texture = std::make_unique<sf::Texture>();
