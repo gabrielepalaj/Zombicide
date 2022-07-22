@@ -154,6 +154,30 @@ SurvivorTests.cpp.s:
 	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/SurvivorTests.cpp.s
 .PHONY : SurvivorTests.cpp.s
 
+ZombieTests.o: ZombieTests.cpp.o
+.PHONY : ZombieTests.o
+
+# target to build an object file
+ZombieTests.cpp.o:
+	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/ZombieTests.cpp.o
+.PHONY : ZombieTests.cpp.o
+
+ZombieTests.i: ZombieTests.cpp.i
+.PHONY : ZombieTests.i
+
+# target to preprocess a source file
+ZombieTests.cpp.i:
+	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/ZombieTests.cpp.i
+.PHONY : ZombieTests.cpp.i
+
+ZombieTests.s: ZombieTests.cpp.s
+.PHONY : ZombieTests.s
+
+# target to generate assembly for a file
+ZombieTests.cpp.s:
+	cd /Users/nikcinigiani/Documents/progetto/Zombicide/cmake-build-debug && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCharacterTests.dir/build.make test/CMakeFiles/runCharacterTests.dir/ZombieTests.cpp.s
+.PHONY : ZombieTests.cpp.s
+
 runAllTests.o: runAllTests.cpp.o
 .PHONY : runAllTests.o
 
@@ -190,6 +214,9 @@ help:
 	@echo "... SurvivorTests.o"
 	@echo "... SurvivorTests.i"
 	@echo "... SurvivorTests.s"
+	@echo "... ZombieTests.o"
+	@echo "... ZombieTests.i"
+	@echo "... ZombieTests.s"
 	@echo "... runAllTests.o"
 	@echo "... runAllTests.i"
 	@echo "... runAllTests.s"

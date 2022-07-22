@@ -389,6 +389,9 @@
 		<Unit filename="/Users/nikcinigiani/Documents/progetto/Zombicide/test/SurvivorTests.cpp">
 			<Option target="runCharacterTests"/>
 		</Unit>
+		<Unit filename="/Users/nikcinigiani/Documents/progetto/Zombicide/test/ZombieTests.cpp">
+			<Option target="runCharacterTests"/>
+		</Unit>
 		<Unit filename="/Users/nikcinigiani/Documents/progetto/Zombicide/test/lib/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>
