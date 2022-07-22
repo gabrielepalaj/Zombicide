@@ -35,6 +35,7 @@ public:
     int attack(Character &character, int nWeapon) override;
 
     bool isNoise() const;
+    bool addCard (int nCard, Card* c);
 
 private :
     PlayerType player;

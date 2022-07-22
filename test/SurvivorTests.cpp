@@ -3,6 +3,7 @@
 //
 #include "gtest/gtest.h"
 #include "../Classes/Survivor.h"
+#include "../Classes/Weapon.h"
 #include <SFML/Graphics.hpp>
 
 
@@ -29,4 +30,5 @@ TEST(Survivor, removeNoise){
     survivor.removeNoise();
     ASSERT_FALSE(survivor.isNoise());
 }
+
 

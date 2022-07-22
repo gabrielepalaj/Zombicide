@@ -48,6 +48,14 @@ int Survivor::attack(Character &character, int nWeapon) {
     }
 }
 
+bool Survivor::addCard(int nCard, Card* c) {
+    if(inventory->isEmpty(nCard)){
+        inventory->addCard(nCard, c);
+        return true;
+    }
+    return false;
+}
+
 bool Survivor::isNoise() const {
     return noise;
 }

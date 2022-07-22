@@ -12,6 +12,13 @@ bool Inventory::addCard(Card *card) {
     return false;
 }
 
+bool Inventory::addCard(int nCard, Card *card) {
+    if (cards.size() < maxCards) {
+        cards.insert(cards.begin() + nCard, card);
+        return true;
+    }
+    return false;
+}
 
 bool Inventory::remove(int nCard) {
     if (nCard < cards.size()) {
