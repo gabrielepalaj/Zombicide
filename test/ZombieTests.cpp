@@ -4,7 +4,6 @@
 #include "gtest/gtest.h"
 #include "../Classes/Zombie.h"
 #include <SFML/Graphics/Texture.hpp>
-#include <iostream>
 
 
 TEST(Zombie, Constructor){
@@ -19,4 +18,6 @@ TEST(Zombie, Move){
     ASSERT_EQ(zombie.getPosMap(), sf::Vector2f(1,1));
     ASSERT_EQ(zombie.getPosition(), sf::Vector2f(1 * Character::SCALE,1*Character::SCALE));
 }
+
+
 
