@@ -8,7 +8,7 @@ Survivor::Survivor(Players player, sf::Vector2f position) : Character(position) 
     this->player = player;
     this->inventory = std::make_unique<Inventory>();
     this->texture = std::make_unique<sf::Texture>();
-    this->texture->loadFromFile("../assets/images/provaCT.jpg");
+    this->texture->loadFromFile("./assets/images/provaCT.jpg");
     this->setTexture(*this->texture);
 
     this->setScale(0.03, 0.03);

@@ -20,7 +20,7 @@ void Game::initWindow() {
     //set sprite background as background
     this->background = std::make_unique<sf::Sprite>();
     this->textureBackground = std::make_unique<sf::Texture>();
-    textureBackground->loadFromFile("../assets/images/Mappa.jpg");
+    textureBackground->loadFromFile("./assets/images/Mappa.jpg");
     this->background->setTexture(*this->textureBackground);
     this->background->setPosition(sf::Vector2f(0, 0));
 

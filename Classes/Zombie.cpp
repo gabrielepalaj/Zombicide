@@ -36,27 +36,27 @@ void Zombie::init() {
     switch (type) {
         case ZombieType::WALKER:
             texture = std::make_unique<sf::Texture>();
-            texture->loadFromFile("../assets/images/zombie_walker.png");
+            texture->loadFromFile("./assets/images/zombie_walker.png");
             setTexture(*texture);
             break;
         case ZombieType::RUNNER:
             texture = std::make_unique<sf::Texture>();
-            texture->loadFromFile("../assets/images/zombie_runner.png");
+            texture->loadFromFile("./assets/images/zombie_runner.png");
             setTexture(*texture);
             break;
         case ZombieType::FATTY:
             texture = std::make_unique<sf::Texture>();
-            texture->loadFromFile("../assets/images/zombie_fatty.png");
+            texture->loadFromFile("./assets/images/zombie_fatty.png");
             setTexture(*texture);
             break;
         case ZombieType::ABOMINATION:
             texture = std::make_unique<sf::Texture>();
-            texture->loadFromFile("../assets/images/zombie_abomination.png");
+            texture->loadFromFile("./assets/images/zombie_abomination.png");
             setTexture(*texture);
             break;
     }
     this->texture = std::make_unique<sf::Texture>();
-    this->texture->loadFromFile("../assets/images/Gioca.png");
+    this->texture->loadFromFile("./assets/images/Gioca.png");
     this->setTexture(*this->texture);
 }
 
