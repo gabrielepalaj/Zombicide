@@ -15,7 +15,8 @@
 class Inventory {
 public:
 
-    bool addCard(Card *card);
+    bool addCard(std::unique_ptr<Card> card);
+    bool addCard(int nCard, std::unique_ptr<Card> card);
 
     bool remove(int nCard);
 
@@ -27,7 +28,8 @@ public:
 
 private:
     const int maxCards = 5;
-    std::vector<Card *> cards;
+    std::vector<std::unique_ptr<Card>> cards;
+
 };
 
 

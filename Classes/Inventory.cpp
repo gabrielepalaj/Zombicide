@@ -4,17 +4,17 @@
 
 #include "Inventory.h"
 
-bool Inventory::addCard(Card *card) {
+bool Inventory::addCard(std::unique_ptr<Card> card) {
     if (cards.size() < maxCards) {
-        cards.push_back(card);
+        cards.push_back(std::move(card));
         return true;
     }
     return false;
 }
 
-bool Inventory::addCard(int nCard, Card *card) {
+bool Inventory::addCard(int nCard, std::unique_ptr<Card> card) {
     if (cards.size() < maxCards) {
-        cards.insert(cards.begin() + nCard, card);
+        cards.insert(cards.begin() + nCard, std::move(card));
         return true;
     }
     return false;
@@ -24,7 +24,7 @@ bool Inventory::remove(int nCard) {
     if (nCard < cards.size()) {
         cards.erase(cards.begin() + nCard);
         for (int i = nCard; i < cards.size(); i++) {
-            cards[i] = cards[i + 1];
+            cards[i] = std::move(cards[i + 1]);
         }
         return true;
     }
@@ -33,7 +33,8 @@ bool Inventory::remove(int nCard) {
 
 bool Inventory::isWeapon(int nWeapon) {
     if (nWeapon < cards.size()) {
-        auto *weapon = dynamic_cast<Weapon *>(cards[nWeapon]);
+
+        auto *weapon = dynamic_cast<Weapon *>(cards[nWeapon].get());
         if (weapon != nullptr) {
             return true;
         }
@@ -43,7 +44,7 @@ bool Inventory::isWeapon(int nWeapon) {
 
 Weapon *Inventory::getWeapon(int nWeapon) const {
     if (nWeapon < cards.size()) {
-        auto *weapon = dynamic_cast<Weapon *>(cards[nWeapon]);
+        auto *weapon = dynamic_cast<Weapon *>(cards[nWeapon].get());
         if (weapon != nullptr) {
             return weapon;
         }

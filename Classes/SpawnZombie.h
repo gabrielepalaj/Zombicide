@@ -14,9 +14,13 @@ enum class SpawnLevel {
 };
 
 class SpawnZombie : Card {
+public:
+    explicit SpawnZombie(SpawnLevel level);
+    ~SpawnZombie();
+    bool use();
     SpawnZombie(int zombie, int fatty, int runner, int abomination);
 
-    std::vector<Zombie *> spawn(SpawnLevel level);
+    std::vector<std::unique_ptr<Zombie>> spawn(SpawnLevel level);
 
 private:
     std::vector<SpawnLevel> spawnLevels;

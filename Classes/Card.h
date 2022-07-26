@@ -8,6 +8,8 @@
 
 class Card {
 public:
+    Card();
+    virtual ~Card();
     virtual bool use() = 0;
 };
 
